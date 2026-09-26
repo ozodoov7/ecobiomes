@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="csrf-token" content="<%= csrf %>">
+<title>Admin panel — Ecobiome</title>
+<link rel="icon" href="/assets/img/logo.png">
+<link rel="stylesheet" href="/admin/static/admin.css">
+</head>
+<body>
+<div class="app" id="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-head">
+      <a href="/admin" class="side-brand"><img src="/assets/img/logo.png" alt=""><span>Admin panel</span></a>
+    </div>
+    <nav id="nav" aria-label="Admin"></nav>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn menu-btn" id="menu-btn" aria-label="Menyu" aria-expanded="false">☰</button>
+      <div class="crumbs" id="crumbs"></div>
+      <div class="top-actions">
+        <a href="/" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Saytni ochish ↗</a>
+        <span class="user-chip" title="<%= user.email %>"><%= user.name %> · <%= user.role === 'admin' ? 'Admin' : 'Editor' %></span>
+        <form method="post" action="/admin/logout"><input type="hidden" name="_csrf" value="<%= csrf %>"><button class="btn btn-ghost btn-sm" type="submit">Chiqish</button></form>
+      </div>
+    </header>
+    <main class="content" id="view" tabindex="-1"><p class="muted">Yuklanmoqda…</p></main>
+  </div>
+</div>
+<div class="toast-wrap" id="toasts" aria-live="polite"></div>
+<script id="me" type="application/json"><%- JSON.stringify(user).replace(/</g, '\\u003c') %></script>
+<script src="/admin/static/admin.js"></script>
+</body>
+</html>

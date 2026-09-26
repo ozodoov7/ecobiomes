@@ -1,0 +1,31 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+
+<main id="main">
+
+<%- include('../partials/page-hero') %>
+
+  <section class="section-alt">
+    <div class="container">
+      <div class="grid grid-3">
+<% services.forEach(s => { %>
+        <div class="service-card" id="service-<%= s.id %>">
+          <span class="tag"><%= s.tag_label %></span>
+          <h3 style="margin-top:12px;"><%= s.title %></h3>
+          <p><%= s.description %></p>
+          <dl class="service-meta">
+<% if (s.methodology) { %>            <dt>Methodology</dt><dd><%= s.methodology %></dd>
+<% } if (s.applications) { %>            <dt>Typical applications</dt><dd><%= s.applications %></dd>
+<% } if (s.request_url) { %>            <dt>Request</dt><dd><a href="<%= s.request_url %>"><%= s.request_label %></a></dd>
+<% } %>          </dl>
+<% if (s.tags.length) { %>          <div class="card-tags"><% s.tags.forEach(t => { %><span class="tag alt"><%= t %></span><% }) %></div>
+<% } %>        </div>
+<% }) %>
+      </div>
+    </div>
+  </section>
+
+<%- include('../partials/cta') %>
+</main>
+
+<%- include('../partials/footer') %>

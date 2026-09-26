@@ -1,0 +1,1667 @@
+{
+  "settings": {
+    "site_name": "Ecobiome Laboratory",
+    "brand_name": "Ecobiome Lab",
+    "brand_tagline": "Plant · Microbe · Insect Research",
+    "logo": "/assets/img/logo.png",
+    "logo_alt": "Ecobiome Laboratory logo",
+    "favicon": "/assets/img/logo.png",
+    "footer_about": "Ecobiome Laboratory is a research group studying the connections between plants, microbes and insects across natural and agricultural ecosystems. Content on this demo site is illustrative.",
+    "copyright_text": "Ecobiome Laboratory. All demo content for illustration only.",
+    "address_short": "12 Botanical Research Way\nGreen Science Campus",
+    "email": "info@ecobiome-lab.demo",
+    "phone": "+1 (000) 000-0000",
+    "socials": [
+      {
+        "label": "X",
+        "aria": "Ecobiome Lab on X",
+        "url": "#"
+      },
+      {
+        "label": "in",
+        "aria": "Ecobiome Lab on LinkedIn",
+        "url": "#"
+      },
+      {
+        "label": "RG",
+        "aria": "Ecobiome Lab on ResearchGate",
+        "url": "#"
+      }
+    ],
+    "privacy_label": "Privacy Policy",
+    "privacy_url": "#",
+    "terms_label": "Terms of Use",
+    "terms_url": "#",
+    "footer_col1_title": "Quick Links",
+    "footer_col2_title": "More",
+    "footer_col3_title": "Contact",
+    "slide_interval": 500,
+    "show_contact_form": false,
+    "map_url": "",
+    "languages": [
+      "en"
+    ],
+    "default_language": "en",
+    "legacy_article_slug": "autumn-sampling-campaign-begins-at-the-oak-forest-field-site",
+    "address_full": "Ecobiome Laboratory\n12 Botanical Research Way\nGreen Science Campus, Building D\n(demo address)",
+    "office_hours": "Monday – Friday, 09:00 – 17:00",
+    "research_email": "research@ecobiome-lab.demo",
+    "collab_email": "collaborate@ecobiome-lab.demo",
+    "show_search": true,
+    "show_hero_logo": false
+  },
+  "blocks": {
+    "home_hero": {
+      "aria_label": "Featured research imagery",
+      "btn1_label": "Explore our research",
+      "btn1_url": "/research.html",
+      "btn2_label": "About the lab",
+      "btn2_url": "#about"
+    },
+    "home_info": {
+      "eyebrow": "About the lab",
+      "title": "Exploring how plants, microbes and insects interact across ecosystems.",
+      "lede": "Ecobiome Laboratory is an interdisciplinary research group combining molecular biology, microbial ecology and entomology to understand the ecological web that connects three kingdoms of life.",
+      "mission_eyebrow": "Our mission",
+      "mission_title": "Three kingdoms, one shared ecology.",
+      "mission_body": "Plants do not grow, defend themselves, or reproduce in isolation. Every root is embedded in a community of bacteria and fungi; every leaf is a surface that insects taste, feed on, and are deterred by.\n\nOur researchers combine molecular biology, microbial ecology and field-based entomology to ask how plant health, soil microbiomes and insect communities influence one another — and what this means for ecosystem resilience, agriculture and climate adaptation.\n\nEvery project we run moves between three settings: the open field, where interactions are first observed; the growth chamber, where conditions can be controlled; and the molecular laboratory, where mechanisms are confirmed."
+    },
+    "home_about": {
+      "eyebrow": "About us",
+      "title": "Why we study plants, microbes and insects together.",
+      "vision_eyebrow": "Vision",
+      "vision_title": "A more complete picture of ecological interaction",
+      "vision_text": "We envision a research community that studies plants, microbes and insects together rather than as separate disciplines — because in nature, they never act alone. Our long-term vision is to build one of the field's most integrative datasets connecting molecular microbiome data with insect ecology across the same study systems.",
+      "history_eyebrow": "History & philosophy",
+      "history_title": "How the laboratory came to be",
+      "history_text": "Ecobiome Laboratory was established by a small group of plant biologists and entomologists who shared a frustration: microbiome studies rarely accounted for insect activity, and insect ecology studies rarely accounted for the microbial state of the host plant. We favour long-term, repeated sampling over one-off snapshots, and paired molecular and field data over either alone.",
+      "quote": "Every leaf we study carries a microbial community and a history of insect encounters. Understanding a plant in isolation only tells part of the story — our laboratory exists to tell the rest of it.",
+      "quote_author": "Dr. Alexander Karimov, Principal Investigator, Ecobiome Laboratory (demo profile)"
+    },
+    "home_explore": {
+      "eyebrow": "Explore",
+      "title": "Find your way around the lab."
+    },
+    "home_contact": {
+      "eyebrow": "Contact",
+      "title": "We welcome research inquiries and collaboration proposals.",
+      "lede": "Whether you are a prospective collaborator, a student interested in our research, or a partner institution, we would like to hear from you.",
+      "form_title": "Send a message",
+      "info_title": "Laboratory information",
+      "subjects": [
+        "Research inquiry",
+        "Collaboration proposal",
+        "Service request",
+        "Student / visiting researcher inquiry",
+        "Media inquiry",
+        "Other"
+      ],
+      "button_label": "Send message",
+      "success_text": "Thank you — your message has been sent to our research office.",
+      "map_title": "Location",
+      "map_placeholder": "Map placeholder — Green Science Campus"
+    },
+    "research_tabs": {
+      "tab_areas": "Research areas",
+      "tab_facilities": "Facilities",
+      "tab_collab": "Collaboration"
+    },
+    "research_facilities": {
+      "eyebrow": "Laboratory facilities",
+      "title": "Infrastructure that connects the bench to the field.",
+      "lede": "Our laboratory maintains dedicated molecular, microscopy and field-research infrastructure, supplemented by shared institutional facilities."
+    },
+    "research_facility_practice": {
+      "eyebrow": "Facility in practice",
+      "title": "From the growth chamber to the forest plot",
+      "text": "Our infrastructure is designed to move a research question seamlessly between controlled and field environments — a hypothesis generated from field observation can be tested within days in our growth chambers and microbial culture facility.",
+      "image": "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=900&q=80",
+      "image_alt": "Researcher examining samples under a laboratory microscope",
+      "caption": "Microscopy suite: imaging root colonisation and fungal structures."
+    },
+    "research_collab": {
+      "eyebrow": "International collaboration",
+      "title": "A globally connected research network.",
+      "lede": "Understanding ecosystems that span continents requires collaboration that does too. We work with partner laboratories, field stations and researchers around the world.",
+      "sub_eyebrow": "How we collaborate"
+    },
+    "research_network": {
+      "eyebrow": "Partner network",
+      "title": "Sample collaboration locations",
+      "lede": "Demo locations representing the type of international network our laboratory maintains.",
+      "note": "Partner countries and institutions listed are illustrative examples for this demonstration site, not confirmed agreements."
+    },
+    "research_timeline": {
+      "eyebrow": "Recent collaborative activity",
+      "title": "Selected exchange highlights"
+    },
+    "people_intro": {
+      "note": "All names, biographies and credentials on this page are fictional demonstration content and do not represent real individuals or institutions.",
+      "pi_eyebrow": "Leadership",
+      "pi_title": "Principal Investigator",
+      "core_eyebrow": "Research scientists & postdocs",
+      "core_title": "Core research team",
+      "doctoral_eyebrow": "PhD & graduate researchers",
+      "doctoral_title": "Doctoral researchers",
+      "technical_eyebrow": "Laboratory & field staff",
+      "technical_title": "Technical & support team"
+    },
+    "projects_intro": {
+      "number_prefix": "Project"
+    },
+    "publications_intro": {
+      "note": "All publications, authors, journals and DOIs on this page are placeholder demo content, not real scientific records.",
+      "search_placeholder": "Search publications by title, author or keyword…",
+      "search_aria": "Search publications",
+      "all_years_label": "All years",
+      "all_areas_label": "All research areas",
+      "button_label": "Read publication",
+      "count_text": "Showing {n} of {total} publications"
+    },
+    "news_intro": {
+      "read_more_label": "Read more",
+      "back_label": "Back to all news",
+      "article_crumb": "Article"
+    },
+    "search_intro": {
+      "placeholder": "Search news, publications, people, projects…",
+      "button_label": "Search",
+      "header_aria": "Search the website",
+      "count_text": "{n} results for “{q}”",
+      "empty_text": "Nothing found. Try a different or shorter word.",
+      "start_text": "Type a word or phrase above — for example a species, a method or a researcher’s name.",
+      "open_label": "Open",
+      "type_news": "News",
+      "type_publication": "Publication",
+      "type_person": "Person",
+      "type_project": "Project",
+      "type_research": "Research area",
+      "type_facility": "Facility",
+      "type_collaboration": "Collaboration",
+      "type_service": "Service",
+      "type_page": "Page"
+    }
+  },
+  "pages": {
+    "home": {
+      "seo_title": "Ecobiome Laboratory — Plant, Microbe & Insect Research",
+      "seo_description": "Ecobiome Laboratory is a research group studying the hidden connections between plants, microbes and insects across ecosystems, from molecular mechanisms to field ecology.",
+      "og_title": "Ecobiome Laboratory — Plant, Microbe & Insect Research",
+      "og_description": "A research laboratory studying plant–microbe–insect interactions, soil microbiomes and ecosystem biodiversity.",
+      "og_image": "/assets/img/logo.png",
+      "breadcrumb": "",
+      "hero_title": "",
+      "hero_lede": "",
+      "cta_enabled": 0,
+      "cta_eyebrow": "",
+      "cta_title": "",
+      "cta_label": "",
+      "cta_url": ""
+    },
+    "research": {
+      "seo_title": "Research — Ecobiome Laboratory",
+      "seo_description": "Ecobiome Laboratory research: eight core research areas, laboratory facilities and international collaboration.",
+      "og_title": "Research — Ecobiome Laboratory",
+      "og_description": "Our research areas, the infrastructure behind them, and our international partner network.",
+      "og_image": "",
+      "breadcrumb": "Research",
+      "hero_title": "Eight research areas, one connected system.",
+      "hero_lede": "Our research programme spans molecular mechanisms to landscape ecology, organised into eight core areas, supported by dedicated facilities and an international partner network.",
+      "cta_enabled": 1,
+      "cta_eyebrow": "Propose a collaboration",
+      "cta_title": "Interested in partnering with Ecobiome Laboratory?",
+      "cta_label": "Contact us",
+      "cta_url": "#contact"
+    },
+    "people": {
+      "seo_title": "People — Ecobiome Laboratory",
+      "seo_description": "Meet the researchers of Ecobiome Laboratory — principal investigator, postdoctoral researchers, PhD students and research staff (demo profiles).",
+      "og_title": "People — Ecobiome Laboratory",
+      "og_description": "Our research team and their interests in plant, microbe and insect ecology.",
+      "og_image": "",
+      "breadcrumb": "People",
+      "hero_title": "The researchers behind the science.",
+      "hero_lede": "Our team brings together plant biologists, microbial ecologists and entomologists. Profiles below are demo content illustrating team structure and research interests.",
+      "cta_enabled": 1,
+      "cta_eyebrow": "Join our team",
+      "cta_title": "Prospective researchers and visiting scholars are welcome.",
+      "cta_label": "Contact us",
+      "cta_url": "#contact"
+    },
+    "projects": {
+      "seo_title": "Projects — Ecobiome Laboratory",
+      "seo_description": "Active research projects at Ecobiome Laboratory, including Plant-Microbe Networks, Insect Biodiversity Atlas, Climate and Plant Disease, and more.",
+      "og_title": "Projects — Ecobiome Laboratory",
+      "og_description": "Six detailed research projects spanning plant-microbe, plant-insect and soil microbiome ecology.",
+      "og_image": "",
+      "breadcrumb": "Projects",
+      "hero_title": "Active and recent research projects.",
+      "hero_lede": "Each project below links one or more of our eight research areas to a specific study system, methodology and set of outcomes.",
+      "cta_enabled": 1,
+      "cta_eyebrow": "Have a research idea?",
+      "cta_title": "We co-design projects with partner institutions.",
+      "cta_label": "See our services",
+      "cta_url": "/services.html"
+    },
+    "publications": {
+      "seo_title": "Publications — Ecobiome Laboratory",
+      "seo_description": "Browse Ecobiome Laboratory's scientific publications from 2023–2026, searchable and filterable by year and research area.",
+      "og_title": "Publications — Ecobiome Laboratory",
+      "og_description": "A searchable archive of demo scientific publications on plant-microbe-insect ecology.",
+      "og_image": "",
+      "breadcrumb": "Publications",
+      "hero_title": "Our scientific publication record.",
+      "hero_lede": "Browse demo publications by year, research area, or keyword search. Entries below are illustrative placeholder content.",
+      "cta_enabled": 0,
+      "cta_eyebrow": "",
+      "cta_title": "",
+      "cta_label": "",
+      "cta_url": ""
+    },
+    "news": {
+      "seo_title": "News & Events — Ecobiome Laboratory",
+      "seo_description": "Laboratory announcements, publications, conferences, fieldwork updates and workshops from Ecobiome Laboratory.",
+      "og_title": "News & Events — Ecobiome Laboratory",
+      "og_description": "Research updates, conferences, fieldwork and laboratory announcements.",
+      "og_image": "",
+      "breadcrumb": "News & Events",
+      "hero_title": "Laboratory news, fieldwork and events.",
+      "hero_lede": "Updates on our research, publications, conferences, workshops and visiting researchers.",
+      "cta_enabled": 0,
+      "cta_eyebrow": "",
+      "cta_title": "",
+      "cta_label": "",
+      "cta_url": ""
+    },
+    "services": {
+      "seo_title": "Our Services — Ecobiome Laboratory",
+      "seo_description": "Research services offered by Ecobiome Laboratory: molecular analysis, DNA sequencing support, ecological data analysis, field sampling, and scientific consultation.",
+      "og_title": "Our Services — Ecobiome Laboratory",
+      "og_description": "Research-oriented services for partner institutions and collaborators.",
+      "og_image": "",
+      "breadcrumb": "Our Services",
+      "hero_title": "Research support for partner institutions.",
+      "hero_lede": "Beyond our own research programme, Ecobiome Laboratory offers analytical and consultative services to academic partners, field stations and applied research projects.",
+      "cta_enabled": 1,
+      "cta_eyebrow": "Need a specific service?",
+      "cta_title": "Tell us about your research needs.",
+      "cta_label": "Contact us",
+      "cta_url": "#contact"
+    },
+    "search": {
+      "seo_title": "Search — Ecobiome Laboratory",
+      "seo_description": "Search news, publications, people, projects, research areas and services of Ecobiome Laboratory.",
+      "og_title": "Search — Ecobiome Laboratory",
+      "og_description": "Search the Ecobiome Laboratory website.",
+      "og_image": "",
+      "breadcrumb": "Search",
+      "hero_title": "Search the laboratory website.",
+      "hero_lede": "Find news, publications, people, projects, research areas and services.",
+      "cta_enabled": 0,
+      "cta_eyebrow": "",
+      "cta_title": "",
+      "cta_label": "",
+      "cta_url": ""
+    }
+  },
+  "collections": {
+    "menu_items": [
+      {
+        "location": "header",
+        "label": "Home",
+        "url": "/",
+        "children": []
+      },
+      {
+        "location": "header",
+        "label": "Research",
+        "url": "/research.html",
+        "children": [
+          {
+            "location": "header",
+            "label": "Facilities",
+            "url": "/research.html#facilities"
+          },
+          {
+            "location": "header",
+            "label": "Collaboration",
+            "url": "/research.html#collaboration"
+          }
+        ]
+      },
+      {
+        "location": "header",
+        "label": "People",
+        "url": "/people.html",
+        "children": []
+      },
+      {
+        "location": "header",
+        "label": "Projects",
+        "url": "/projects.html",
+        "children": []
+      },
+      {
+        "location": "header",
+        "label": "Publications",
+        "url": "/publications.html",
+        "children": []
+      },
+      {
+        "location": "header",
+        "label": "News & Events",
+        "url": "/news.html",
+        "children": []
+      },
+      {
+        "location": "header",
+        "label": "Services",
+        "url": "/services.html",
+        "children": []
+      },
+      {
+        "location": "header_button",
+        "label": "Contact",
+        "url": "#contact",
+        "children": []
+      },
+      {
+        "location": "footer_1",
+        "label": "Home",
+        "url": "/",
+        "children": []
+      },
+      {
+        "location": "footer_1",
+        "label": "Research",
+        "url": "/research.html",
+        "children": []
+      },
+      {
+        "location": "footer_1",
+        "label": "People",
+        "url": "/people.html",
+        "children": []
+      },
+      {
+        "location": "footer_1",
+        "label": "Projects",
+        "url": "/projects.html",
+        "children": []
+      },
+      {
+        "location": "footer_2",
+        "label": "Publications",
+        "url": "/publications.html",
+        "children": []
+      },
+      {
+        "location": "footer_2",
+        "label": "News & Events",
+        "url": "/news.html",
+        "children": []
+      },
+      {
+        "location": "footer_2",
+        "label": "Services",
+        "url": "/services.html",
+        "children": []
+      }
+    ],
+    "hero_slides": [
+      {
+        "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Sunlight filtering through a temperate forest canopy",
+        "focus": "center 55%",
+        "eyebrow": "Plant-based species interactions",
+        "title": "Plants, microbes and insects",
+        "btn1_label": "",
+        "btn1_url": "",
+        "btn2_label": "",
+        "btn2_url": ""
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1590682680695-43b964a3ae17?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Hands planting a young seedling into soil",
+        "focus": "center 60%",
+        "eyebrow": "Exploring plant roots and microbial communities",
+        "title": "Hidden life beneath the soil",
+        "btn1_label": "",
+        "btn1_url": "",
+        "btn2_label": "",
+        "btn2_url": ""
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1596510743279-b354a760e5d0?auto=format&fit=crop&w=1600&q=80",
+        "alt": "A butterfly resting on a purple flower",
+        "focus": "center 35%",
+        "eyebrow": "Understanding biodiversity and species interactions",
+        "title": "The ecology of insects",
+        "btn1_label": "",
+        "btn1_url": "",
+        "btn2_label": "",
+        "btn2_url": ""
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1600&q=80",
+        "alt": "A solitary tree standing in an open field",
+        "focus": "center 65%",
+        "eyebrow": "Climate, disease and ecosystem dynamics",
+        "title": "Plants in changing environments",
+        "btn1_label": "",
+        "btn1_url": "",
+        "btn2_label": "",
+        "btn2_url": ""
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1600&q=80",
+        "alt": "A researcher working at laboratory benches",
+        "focus": "center 50%",
+        "eyebrow": "Connecting ecological observations with molecular research",
+        "title": "From fieldwork to laboratory",
+        "btn1_label": "",
+        "btn1_url": "",
+        "btn2_label": "",
+        "btn2_url": ""
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Wildflowers growing among cereal crops in an open field",
+        "focus": "center 60%",
+        "eyebrow": "Researching the complexity of natural ecosystems",
+        "title": "Discovering new interactions",
+        "btn1_label": "",
+        "btn1_url": "",
+        "btn2_label": "",
+        "btn2_url": ""
+      }
+    ],
+    "explore_cards": [
+      {
+        "title": "Research",
+        "text": "Eight research areas, from molecular mechanisms to landscapes.",
+        "url": "/research.html",
+        "link_label": "Open"
+      },
+      {
+        "title": "Facilities",
+        "text": "Molecular, microscopy, growth-chamber and field infrastructure.",
+        "url": "/research.html#facilities",
+        "link_label": "Open"
+      },
+      {
+        "title": "Collaboration",
+        "text": "Our international partners, exchanges and joint work.",
+        "url": "/research.html#collaboration",
+        "link_label": "Open"
+      },
+      {
+        "title": "People",
+        "text": "The researchers, students and staff behind the lab.",
+        "url": "/people.html",
+        "link_label": "Open"
+      },
+      {
+        "title": "Projects",
+        "text": "Six active and recent projects, with methods and outcomes.",
+        "url": "/projects.html",
+        "link_label": "Open"
+      },
+      {
+        "title": "Publications",
+        "text": "Searchable list of papers from 2023 to 2026.",
+        "url": "/publications.html",
+        "link_label": "Open"
+      },
+      {
+        "title": "News & Events",
+        "text": "Fieldwork updates, conferences and announcements.",
+        "url": "/news.html",
+        "link_label": "Open"
+      },
+      {
+        "title": "Services",
+        "text": "Analysis, sequencing, field and consultation support.",
+        "url": "/services.html",
+        "link_label": "Open"
+      }
+    ],
+    "research_areas": [
+      {
+        "title": "Plant–Microbe Interactions",
+        "summary": "We study how root-associated and leaf-surface microbial communities influence plant nutrition, growth and immune signalling, and how plants in turn select and shape their microbial partners.",
+        "questions": [
+          "How does root exudate chemistry recruit specific bacterial taxa?",
+          "Do beneficial microbes prime plant immune responses against pathogens?",
+          "How stable are plant–microbe associations across generations?"
+        ],
+        "methods": "16S/ITS amplicon sequencing, gnotobiotic plant assays, confocal microscopy of root colonisation.",
+        "current_focus": "Rhizosphere recruitment in Arabidopsis thaliana under nutrient stress.",
+        "related_projects": "Plant-Microbe Networks, Soil Microbiome Dynamics.",
+        "link_label": "Learn more",
+        "link_url": "/projects.html"
+      },
+      {
+        "title": "Plant–Insect Interactions",
+        "summary": "This area examines the chemical and physical dialogue between plants and insects — from herbivore feeding and induced defences to pollination and insect-vectored microbes.",
+        "questions": [
+          "How do herbivore-induced plant volatiles affect neighbouring plants and predators?",
+          "What role do insects play in dispersing plant-associated microbes?",
+          "How does leaf chemistry mediate insect host-plant choice?"
+        ],
+        "methods": "Volatile organic compound (VOC) analysis, choice-assay bioassays, field herbivory surveys.",
+        "current_focus": "Herbivore-induced volatiles and microbiome shifts in Quercus robur canopies.",
+        "related_projects": "Insect Biodiversity Atlas, Forest Ecosystem Interactions.",
+        "link_label": "Learn more",
+        "link_url": "/projects.html"
+      },
+      {
+        "title": "Soil Microbiomes",
+        "summary": "We characterise the composition and function of soil bacterial and fungal communities across agricultural and natural land uses, and how they respond to management practices.",
+        "questions": [
+          "How does land management alter soil microbial diversity and function?",
+          "Which taxa are reliable indicators of soil health?",
+          "How resilient are soil microbiomes to disturbance?"
+        ],
+        "methods": "Shotgun metagenomics, soil enzyme assays, long-term plot monitoring.",
+        "current_focus": "Comparing shaded and unshaded coffee agroecosystem soils.",
+        "related_projects": "Coffee Agroecosystem Research, Soil Microbiome Dynamics.",
+        "link_label": "Learn more",
+        "link_url": "/projects.html"
+      },
+      {
+        "title": "Biodiversity & Ecosystems",
+        "summary": "This area quantifies species diversity and interaction networks — plant, microbial and insect — across natural and managed landscapes, tracking how diversity relates to ecosystem stability.",
+        "questions": [
+          "How does habitat fragmentation affect interaction network structure?",
+          "Does higher plant diversity buffer insect outbreak risk?",
+          "What indicators best capture ecosystem-level biodiversity change?"
+        ],
+        "methods": "Transect surveys, pitfall and light trapping, network analysis.",
+        "current_focus": "Cataloguing insect diversity across a forest–farmland gradient.",
+        "related_projects": "Insect Biodiversity Atlas.",
+        "link_label": "Learn more",
+        "link_url": "/projects.html"
+      },
+      {
+        "title": "Climate & Plant Health",
+        "summary": "We investigate how shifting temperature and precipitation patterns alter plant disease dynamics, microbiome composition and pest pressure.",
+        "questions": [
+          "Does warming shift the balance between beneficial and pathogenic microbes?",
+          "How does drought stress alter plant susceptibility to herbivory?",
+          "Can microbiome engineering buffer climate-driven disease risk?"
+        ],
+        "methods": "Controlled-environment chamber experiments, drought-stress trials, disease incidence monitoring.",
+        "current_focus": "Drought-linked disease susceptibility in temperate tree seedlings.",
+        "related_projects": "Climate and Plant Disease.",
+        "link_label": "Learn more",
+        "link_url": "/projects.html"
+      },
+      {
+        "title": "Molecular Ecology",
+        "summary": "This area applies genomic and transcriptomic tools to understand adaptation, gene flow, and functional traits underlying plant, microbial and insect interactions.",
+        "questions": [
+          "Which genes underlie plant recognition of beneficial versus pathogenic microbes?",
+          "How much local adaptation exists in microbial partners across sites?",
+          "What functional traits distinguish resilient microbial communities?"
+        ],
+        "methods": "RNA-seq, comparative genomics, population genetic analysis.",
+        "current_focus": "Comparative transcriptomics of oak immune response to combined stress.",
+        "related_projects": "Plant-Microbe Networks.",
+        "link_label": "Learn more",
+        "link_url": "/projects.html"
+      },
+      {
+        "title": "Spatial Ecology",
+        "summary": "We examine how interactions vary across space — from microhabitat differences within a single tree canopy to landscape-scale gradients between forest and farmland.",
+        "questions": [
+          "How does distance from forest edge affect insect community composition?",
+          "Do microbiome gradients track landscape connectivity?",
+          "What spatial scale best predicts interaction network stability?"
+        ],
+        "methods": "GIS-based landscape analysis, spatially nested sampling designs, remote sensing.",
+        "current_focus": "Mapping herbivory intensity across a forest-edge gradient.",
+        "related_projects": "Forest Ecosystem Interactions.",
+        "link_label": "Learn more",
+        "link_url": "/projects.html"
+      },
+      {
+        "title": "Evolutionary Ecology",
+        "summary": "This area studies how co-evolutionary pressures between plants, microbes and insects shape trait diversification over time, using both field observation and comparative analysis.",
+        "questions": [
+          "Do plant defence traits co-evolve with specific insect herbivore lineages?",
+          "How stable are mutualisms with microbial partners over evolutionary time?",
+          "What role does geographic isolation play in trait divergence?"
+        ],
+        "methods": "Comparative phylogenetics, common-garden experiments, trait-mapping analysis.",
+        "current_focus": "Co-evolutionary signatures in oak defence-chemistry variation.",
+        "related_projects": "Plant-Microbe Networks, Insect Biodiversity Atlas.",
+        "link_label": "Learn more",
+        "link_url": "/projects.html"
+      }
+    ],
+    "facilities": [
+      {
+        "icon": "01",
+        "title": "Molecular Biology Facilities",
+        "description": "Dedicated bench space for nucleic acid extraction, PCR, gel electrophoresis and library preparation, supporting both plant and microbial sample workflows.",
+        "specs": [
+          {
+            "label": "Capacity",
+            "value": "8 working stations"
+          },
+          {
+            "label": "Equipment",
+            "value": "Thermocyclers, gel documentation system, laminar flow hoods"
+          },
+          {
+            "label": "Use",
+            "value": "DNA/RNA extraction, PCR, cloning"
+          }
+        ]
+      },
+      {
+        "icon": "02",
+        "title": "Microscopy Suite",
+        "description": "Imaging infrastructure for visualising root colonisation, fungal structures and insect mouthpart morphology at multiple magnifications.",
+        "specs": [
+          {
+            "label": "Equipment",
+            "value": "Confocal laser scanning microscope, compound microscopes, stereo dissecting scopes"
+          },
+          {
+            "label": "Use",
+            "value": "Root colonisation imaging, fungal structure analysis, insect morphology"
+          }
+        ]
+      },
+      {
+        "icon": "03",
+        "title": "DNA Sequencing Access",
+        "description": "In-house library preparation with access to shared institutional next-generation sequencing platforms for amplicon and shotgun metagenomic sequencing.",
+        "specs": [
+          {
+            "label": "Platforms",
+            "value": "Illumina-compatible short-read sequencing (shared facility)"
+          },
+          {
+            "label": "Use",
+            "value": "16S/ITS amplicon sequencing, shotgun metagenomics, RNA-seq"
+          }
+        ]
+      },
+      {
+        "icon": "04",
+        "title": "Microbial Culture Facility",
+        "description": "Sterile culture rooms for isolating and maintaining bacterial and fungal strains from plant and soil samples.",
+        "specs": [
+          {
+            "label": "Equipment",
+            "value": "Biosafety cabinets, incubators, autoclaves, strain storage freezers"
+          },
+          {
+            "label": "Use",
+            "value": "Strain isolation, gnotobiotic plant inoculation trials"
+          }
+        ]
+      },
+      {
+        "icon": "05",
+        "title": "Controlled Environment Chambers",
+        "description": "Growth chambers with independently programmable temperature, humidity and light regimes for climate-stress and disease experiments.",
+        "specs": [
+          {
+            "label": "Capacity",
+            "value": "6 chambers"
+          },
+          {
+            "label": "Range",
+            "value": "4–40°C, adjustable photoperiod and humidity"
+          },
+          {
+            "label": "Use",
+            "value": "Drought/heat-stress trials, pathogen inoculation experiments"
+          }
+        ]
+      },
+      {
+        "icon": "06",
+        "title": "Field Sampling Equipment",
+        "description": "A dedicated field kit inventory supporting standardised sampling across all active study sites.",
+        "specs": [
+          {
+            "label": "Equipment",
+            "value": "Pitfall & light traps, sweep nets, soil corers, portable VOC samplers"
+          },
+          {
+            "label": "Use",
+            "value": "Insect surveys, soil sampling, volatile organic compound collection"
+          }
+        ]
+      },
+      {
+        "icon": "07",
+        "title": "Data Analysis Infrastructure",
+        "description": "Computing resources for bioinformatics pipelines, statistical modelling and geospatial analysis.",
+        "specs": [
+          {
+            "label": "Equipment",
+            "value": "High-memory workstations, shared institutional compute cluster access"
+          },
+          {
+            "label": "Use",
+            "value": "Sequence assembly, network analysis, GIS modelling"
+          }
+        ]
+      },
+      {
+        "icon": "08",
+        "title": "Ecological Monitoring Equipment",
+        "description": "Long-term monitoring instrumentation deployed across field sites to track environmental conditions alongside biological sampling.",
+        "specs": [
+          {
+            "label": "Equipment",
+            "value": "Soil moisture & temperature loggers, weather stations, camera traps"
+          },
+          {
+            "label": "Use",
+            "value": "Continuous environmental data collection at field plots"
+          }
+        ]
+      }
+    ],
+    "collab_types": [
+      {
+        "title": "Joint projects",
+        "text": "Co-designed research projects with shared field sites, funding and authorship, such as our coffee agroecosystem work."
+      },
+      {
+        "title": "Research exchanges",
+        "text": "Short- and long-term exchanges allowing our researchers to work in partner laboratories and vice versa."
+      },
+      {
+        "title": "Visiting researchers",
+        "text": "We host visiting scientists for collaborative fieldwork, method training and joint analysis."
+      },
+      {
+        "title": "Student mobility",
+        "text": "PhD and graduate students spend research periods at partner institutions as part of joint supervision agreements."
+      },
+      {
+        "title": "Data sharing",
+        "text": "We contribute to and draw from shared open datasets on microbiome and insect biodiversity records."
+      },
+      {
+        "title": "Scientific workshops",
+        "text": "We organise and participate in method-focused workshops, such as our recent VOC analysis workshop."
+      },
+      {
+        "title": "Collaborative publications",
+        "text": "A large share of our publication output is co-authored with international partners."
+      },
+      {
+        "title": "Shared infrastructure",
+        "text": "Partner institutions occasionally share sequencing or field-monitoring capacity for joint studies."
+      }
+    ],
+    "collab_locations": [
+      {
+        "country": "Germany",
+        "description": "Forest ecology partner lab",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "country": "Brazil",
+        "description": "Coffee agroecosystem partner",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "country": "Kenya",
+        "description": "Soil microbiome field station",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "country": "Japan",
+        "description": "Molecular ecology exchange",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "country": "Sweden",
+        "description": "Climate chamber consortium",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "country": "Uzbekistan",
+        "description": "Regional biodiversity survey",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "country": "Canada",
+        "description": "Insect network research group",
+        "lat": null,
+        "lng": null
+      },
+      {
+        "country": "Netherlands",
+        "description": "Chemical ecology workshop host",
+        "lat": null,
+        "lng": null
+      }
+    ],
+    "collab_timeline": [
+      {
+        "year": "2026",
+        "title": "Joint fieldwork with a Brazilian partner laboratory",
+        "text": "Two of our researchers joined a partner team for a comparative sampling campaign across shaded coffee plots."
+      },
+      {
+        "year": "2025",
+        "title": "Visiting researcher programme, molecular ecology exchange",
+        "text": "A visiting postdoctoral researcher spent four months in our molecular biology facility developing comparative genomics methods."
+      },
+      {
+        "year": "2024",
+        "title": "Regional biodiversity survey collaboration",
+        "text": "Our biodiversity team contributed standardised insect survey data to a regional cross-institution dataset."
+      }
+    ],
+    "people": [
+      {
+        "slug": "alexander-karimov",
+        "name": "Dr. Alexander Karimov",
+        "initials": "AK",
+        "photo": "",
+        "photo_alt": "",
+        "role_title": "Principal Investigator",
+        "grp": "pi",
+        "bio": "Dr. Karimov leads the laboratory's overall research programme, with a focus on plant–microbe signalling and rhizosphere ecology. He founded Ecobiome Laboratory to bridge molecular microbiology and field entomology under one research umbrella.",
+        "tags": [
+          "Rhizosphere ecology",
+          "Plant immunity",
+          "Lab leadership"
+        ],
+        "email": "",
+        "orcid": "",
+        "scholar_url": ""
+      },
+      {
+        "slug": "madina-rahimova",
+        "name": "Dr. Madina Rahimova",
+        "initials": "MR",
+        "photo": "",
+        "photo_alt": "",
+        "role_title": "Deputy Director & Postdoctoral Researcher",
+        "grp": "pi",
+        "bio": "Dr. Rahimova coordinates the laboratory's field research programme and leads studies on herbivore-induced plant volatiles and their effect on microbiome assembly.",
+        "tags": [
+          "Chemical ecology",
+          "Field methods"
+        ],
+        "email": "",
+        "orcid": "",
+        "scholar_url": ""
+      },
+      {
+        "slug": "daniel-morgan",
+        "name": "Dr. Daniel Morgan",
+        "initials": "DM",
+        "photo": "",
+        "photo_alt": "",
+        "role_title": "Research Scientist",
+        "grp": "core",
+        "bio": "Focuses on soil microbiome metagenomics and land-use impacts on microbial diversity in agroecosystems.",
+        "tags": [
+          "Soil microbiomes",
+          "Metagenomics"
+        ],
+        "email": "",
+        "orcid": "",
+        "scholar_url": ""
+      },
+      {
+        "slug": "layla-suvonova",
+        "name": "Dr. Layla Suvonova",
+        "initials": "LS",
+        "photo": "",
+        "photo_alt": "",
+        "role_title": "Postdoctoral Researcher",
+        "grp": "core",
+        "bio": "Studies insect community structure across forest–farmland gradients and interaction network stability.",
+        "tags": [
+          "Biodiversity",
+          "Network ecology"
+        ],
+        "email": "",
+        "orcid": "",
+        "scholar_url": ""
+      },
+      {
+        "slug": "thomas-nilsson",
+        "name": "Dr. Thomas Nilsson",
+        "initials": "TN",
+        "photo": "",
+        "photo_alt": "",
+        "role_title": "Postdoctoral Researcher",
+        "grp": "core",
+        "bio": "Investigates climate-linked shifts in plant disease dynamics using controlled-environment chamber experiments.",
+        "tags": [
+          "Climate ecology",
+          "Plant pathology"
+        ],
+        "email": "",
+        "orcid": "",
+        "scholar_url": ""
+      },
+      {
+        "slug": "farida-abdullayeva",
+        "name": "Dr. Farida Abdullayeva",
+        "initials": "FA",
+        "photo": "",
+        "photo_alt": "",
+        "role_title": "Research Scientist",
+        "grp": "core",
+        "bio": "Leads molecular ecology work on comparative genomics of plant immune-response genes under combined stress.",
+        "tags": [
+          "Molecular ecology",
+          "Genomics"
+        ],
+        "email": "",
+        "orcid": "",
+        "scholar_url": ""
+      },
+      {
+        "slug": "julia-keller",
+        "name": "Dr. Julia Keller",
+        "initials": "JK",
+        "photo": "",
+        "photo_alt": "",
+        "role_title": "Research Scientist",
+        "grp": "core",
+        "bio": "Specialises in spatial ecology, using GIS and remote sensing to map interaction gradients across landscapes.",
+        "tags": [
+          "Spatial ecology",
+          "GIS"
+        ],
+        "email": "",
+        "orcid": "",
+        "scholar_url": ""
+      },
+      {
+        "slug": "otabek-islomov",
+        "name": "Dr. Otabek Islomov",
+        "initials": "OI",
+        "photo": "",
+        "photo_alt": "",
+        "role_title": "Research Scientist",
+        "grp": "core",
+        "bio": "Works on evolutionary ecology of plant defence traits and co-evolutionary dynamics with insect herbivores.",
+        "tags": [
+          "Evolutionary ecology",
+          "Plant defence"
+        ],
+        "email": "",
+        "orcid": "",
+        "scholar_url": ""
+      },
+      {
+        "slug": "sofia-petrova",
+        "name": "Sofia Petrova",
+        "initials": "SP",
+        "photo": "",
+        "photo_alt": "",
+        "role_title": "PhD Candidate",
+        "grp": "doctoral",
+        "bio": "Thesis on rhizosphere bacterial recruitment under drought stress in Arabidopsis thaliana.",
+        "tags": [
+          "Plant–microbe"
+        ],
+        "email": "",
+        "orcid": "",
+        "scholar_url": ""
+      },
+      {
+        "slug": "rustam-botirov",
+        "name": "Rustam Botirov",
+        "initials": "RB",
+        "photo": "",
+        "photo_alt": "",
+        "role_title": "PhD Candidate",
+        "grp": "doctoral",
+        "bio": "Thesis on volatile-mediated plant–plant signalling following herbivore attack.",
+        "tags": [
+          "Chemical ecology"
+        ],
+        "email": "",
+        "orcid": "",
+        "scholar_url": ""
+      },
+      {
+        "slug": "emma-wallace",
+        "name": "Emma Wallace",
+        "initials": "EW",
+        "photo": "",
+        "photo_alt": "",
+        "role_title": "PhD Candidate",
+        "grp": "doctoral",
+        "bio": "Thesis on soil fungal community succession in shaded coffee agroecosystems.",
+        "tags": [
+          "Soil microbiomes"
+        ],
+        "email": "",
+        "orcid": "",
+        "scholar_url": ""
+      },
+      {
+        "slug": "nodira-valiyeva",
+        "name": "Nodira Valiyeva",
+        "initials": "NV",
+        "photo": "",
+        "photo_alt": "",
+        "role_title": "Laboratory Manager",
+        "grp": "technical",
+        "bio": "Oversees molecular biology laboratory operations, equipment scheduling and safety protocols.",
+        "tags": [],
+        "email": "",
+        "orcid": "",
+        "scholar_url": ""
+      },
+      {
+        "slug": "carlos-benitez",
+        "name": "Carlos Benítez",
+        "initials": "CB",
+        "photo": "",
+        "photo_alt": "",
+        "role_title": "Field Research Coordinator",
+        "grp": "technical",
+        "bio": "Coordinates field sampling logistics across all active study sites.",
+        "tags": [],
+        "email": "",
+        "orcid": "",
+        "scholar_url": ""
+      },
+      {
+        "slug": "aziza-yusupova",
+        "name": "Aziza Yusupova",
+        "initials": "AY",
+        "photo": "",
+        "photo_alt": "",
+        "role_title": "Data & Bioinformatics Assistant",
+        "grp": "technical",
+        "bio": "Supports sequencing data processing pipelines and statistical analysis.",
+        "tags": [],
+        "email": "",
+        "orcid": "",
+        "scholar_url": ""
+      }
+    ],
+    "projects": [
+      {
+        "slug": "plant-microbe-networks",
+        "title": "Plant-Microbe Networks",
+        "badge": "Ongoing",
+        "state": "active",
+        "year_start": null,
+        "year_end": null,
+        "overview": "Mapping rhizosphere and phyllosphere microbial networks across multiple host plant species to understand recruitment and stability.",
+        "question": "How consistent are plant–microbe associations across environments and plant genotypes?",
+        "objectives": "Characterise core microbiome membership; identify environmental drivers of variation",
+        "methods": "Amplicon sequencing, network co-occurrence analysis, greenhouse validation trials",
+        "study_system": "Arabidopsis thaliana and companion grassland species",
+        "outcomes": "A reference network model of core rhizosphere associations",
+        "related_label": "Related: Rhizosphere ecology",
+        "tags": [],
+        "image": "",
+        "image_alt": "",
+        "link_label": "Related publications",
+        "link_url": "/publications.html",
+        "people": []
+      },
+      {
+        "slug": "insect-biodiversity-atlas",
+        "title": "Insect Biodiversity Atlas",
+        "badge": "Ongoing",
+        "state": "active",
+        "year_start": null,
+        "year_end": null,
+        "overview": "A multi-year survey cataloguing insect diversity across a forest-to-farmland land-use gradient.",
+        "question": "How does land-use intensity reshape insect community composition and interaction networks?",
+        "objectives": "Build a standardised insect occurrence dataset; quantify network-level diversity loss",
+        "methods": "Pitfall and light trapping, transect surveys, DNA barcoding",
+        "study_system": "Six landscape plots spanning closed forest to intensive farmland",
+        "outcomes": "An open-access regional insect biodiversity dataset",
+        "related_label": "Related: Biodiversity & Ecosystems",
+        "tags": [],
+        "image": "",
+        "image_alt": "",
+        "link_label": "Related publications",
+        "link_url": "/publications.html",
+        "people": []
+      },
+      {
+        "slug": "climate-and-plant-disease",
+        "title": "Climate and Plant Disease",
+        "badge": "Ongoing",
+        "state": "active",
+        "year_start": null,
+        "year_end": null,
+        "overview": "Controlled-environment experiments testing how warming and drought interact to shift plant disease susceptibility.",
+        "question": "Does combined heat and drought stress increase pathogen susceptibility more than either stressor alone?",
+        "objectives": "Quantify disease incidence under single and combined stress; identify microbiome correlates",
+        "methods": "Growth-chamber trials, controlled pathogen inoculation, microbiome profiling",
+        "study_system": "Temperate tree seedlings (Quercus robur, Fagus sylvatica)",
+        "outcomes": "A predictive model of climate-linked disease risk",
+        "related_label": "Related: Climate & Plant Health",
+        "tags": [],
+        "image": "",
+        "image_alt": "",
+        "link_label": "Related publications",
+        "link_url": "/publications.html",
+        "people": []
+      },
+      {
+        "slug": "forest-ecosystem-interactions",
+        "title": "Forest Ecosystem Interactions",
+        "badge": "Ongoing — Flagship",
+        "state": "active",
+        "year_start": null,
+        "year_end": null,
+        "overview": "Our flagship project tracking individual oak trees across seasons for leaf microbiome, root fungal associates and insect herbivory.",
+        "question": "How do microbial and herbivore pressures on the same host tree interact over time?",
+        "objectives": "Build a longitudinal, individual-tree-level dataset linking microbiome and herbivory",
+        "methods": "Repeated leaf and soil sampling, VOC analysis, insect surveys",
+        "study_system": "Quercus robur across six forest plots",
+        "outcomes": "A seasonal model of tree-level microbiome–herbivore dynamics",
+        "related_label": "Related: Plant–Insect Interactions",
+        "tags": [],
+        "image": "",
+        "image_alt": "",
+        "link_label": "Related publications",
+        "link_url": "/publications.html",
+        "people": []
+      },
+      {
+        "slug": "coffee-agroecosystem-research",
+        "title": "Coffee Agroecosystem Research",
+        "badge": "Ongoing",
+        "state": "active",
+        "year_start": null,
+        "year_end": null,
+        "overview": "Comparing soil and canopy biodiversity between shaded and unshaded Coffea arabica plantations.",
+        "question": "Does shade-grown coffee support richer soil microbiomes and insect communities than sun-grown coffee?",
+        "objectives": "Compare microbial and insect diversity across management types; assess yield trade-offs",
+        "methods": "Paired-plot sampling, metagenomics, insect transect surveys",
+        "study_system": "Coffea arabica agroecosystems",
+        "outcomes": "Management recommendations balancing biodiversity and yield",
+        "related_label": "Related: Soil Microbiomes",
+        "tags": [],
+        "image": "",
+        "image_alt": "",
+        "link_label": "Related publications",
+        "link_url": "/publications.html",
+        "people": []
+      },
+      {
+        "slug": "soil-microbiome-dynamics",
+        "title": "Soil Microbiome Dynamics",
+        "badge": "Completed data collection",
+        "state": "completed",
+        "year_start": null,
+        "year_end": null,
+        "overview": "A three-year monitoring study of soil bacterial and fungal community turnover across seasons and land-management regimes.",
+        "question": "How resilient are soil microbial communities to seasonal and management disturbance?",
+        "objectives": "Characterise temporal turnover; identify resilience indicators",
+        "methods": "Repeated shotgun metagenomic sampling, soil enzyme assays",
+        "study_system": "Long-term agricultural and grassland monitoring plots",
+        "outcomes": "A soil health indicator framework for land managers",
+        "related_label": "Related: Soil Microbiomes",
+        "tags": [],
+        "image": "",
+        "image_alt": "",
+        "link_label": "Related publications",
+        "link_url": "/publications.html",
+        "people": []
+      }
+    ],
+    "pub_categories": [
+      {
+        "key": "microbe",
+        "label": "Plant–Microbe Interactions"
+      },
+      {
+        "key": "insect",
+        "label": "Plant–Insect Interactions"
+      },
+      {
+        "key": "soil",
+        "label": "Soil Microbiomes"
+      },
+      {
+        "key": "biodiversity",
+        "label": "Biodiversity & Ecosystems"
+      },
+      {
+        "key": "climate",
+        "label": "Climate & Plant Health"
+      },
+      {
+        "key": "molecular",
+        "label": "Molecular Ecology"
+      }
+    ],
+    "publications": [
+      {
+        "title": "Root exudate composition shapes rhizosphere bacterial recruitment in Arabidopsis thaliana",
+        "authors": "Karimova, M., Morgan, D., Petrova, S.",
+        "year": 2026,
+        "journal": "Journal of Plant–Microbe Ecology",
+        "volume": "41",
+        "issue": "2",
+        "pages": "112–128",
+        "doi": "10.0000/jpme.2026.0412",
+        "category": "microbe",
+        "pdf": "",
+        "url": "#"
+      },
+      {
+        "title": "Shade management shifts soil bacterial diversity in Coffea arabica agroecosystems",
+        "authors": "Wallace, E., Morgan, D.",
+        "year": 2026,
+        "journal": "Agroecosystem Science",
+        "volume": "18",
+        "issue": "1",
+        "pages": "45–61",
+        "doi": "10.0000/agsc.2026.1801",
+        "category": "soil",
+        "pdf": "",
+        "url": "#"
+      },
+      {
+        "title": "Land-use intensity restructures insect interaction networks across a forest–farmland gradient",
+        "authors": "Suvonova, L., Keller, J.",
+        "year": 2026,
+        "journal": "Landscape Ecology & Biodiversity",
+        "volume": "33",
+        "issue": "3",
+        "pages": "201–219",
+        "doi": "10.0000/leb.2026.3303",
+        "category": "biodiversity",
+        "pdf": "",
+        "url": "#"
+      },
+      {
+        "title": "Herbivore-induced volatiles alter leaf microbiome assembly in Quercus robur",
+        "authors": "Rahimova, M., Karimov, A., Botirov, R.",
+        "year": 2025,
+        "journal": "Ecology & Chemical Signalling",
+        "volume": "29",
+        "issue": "4",
+        "pages": "301–317",
+        "doi": "10.0000/ecs.2025.2904",
+        "category": "insect",
+        "pdf": "",
+        "url": "#"
+      },
+      {
+        "title": "Combined heat and drought stress increases disease susceptibility in temperate tree seedlings",
+        "authors": "Nilsson, T., Karimov, A.",
+        "year": 2025,
+        "journal": "Climate Change & Plant Health",
+        "volume": "7",
+        "issue": "2",
+        "pages": "88–104",
+        "doi": "10.0000/ccph.2025.0702",
+        "category": "climate",
+        "pdf": "",
+        "url": "#"
+      },
+      {
+        "title": "Comparative transcriptomics reveals conserved immune-response genes across oak populations",
+        "authors": "Abdullayeva, F., Islomov, O.",
+        "year": 2025,
+        "journal": "Molecular Ecology Reports",
+        "volume": "15",
+        "issue": "6",
+        "pages": "512–528",
+        "doi": "10.0000/mer.2025.1506",
+        "category": "molecular",
+        "pdf": "",
+        "url": "#"
+      },
+      {
+        "title": "Beneficial rhizobacteria prime systemic immune responses in grassland species",
+        "authors": "Karimov, A., Rahimova, M.",
+        "year": 2025,
+        "journal": "Journal of Plant–Microbe Ecology",
+        "volume": "40",
+        "issue": "1",
+        "pages": "22–39",
+        "doi": "10.0000/jpme.2025.4001",
+        "category": "microbe",
+        "pdf": "",
+        "url": "#"
+      },
+      {
+        "title": "Three-year monitoring reveals resilience of grassland soil microbiomes to seasonal disturbance",
+        "authors": "Morgan, D., Suvonova, L.",
+        "year": 2024,
+        "journal": "Soil Ecology Letters",
+        "volume": "12",
+        "issue": "3",
+        "pages": "156–171",
+        "doi": "10.0000/sel.2024.1203",
+        "category": "soil",
+        "pdf": "",
+        "url": "#"
+      },
+      {
+        "title": "Leaf chemistry mediates host-plant choice in generalist lepidopteran herbivores",
+        "authors": "Botirov, R., Rahimova, M.",
+        "year": 2024,
+        "journal": "Ecology & Chemical Signalling",
+        "volume": "28",
+        "issue": "2",
+        "pages": "133–149",
+        "doi": "10.0000/ecs.2024.2802",
+        "category": "insect",
+        "pdf": "",
+        "url": "#"
+      },
+      {
+        "title": "Habitat fragmentation reduces pollination network robustness in temperate grasslands",
+        "authors": "Keller, J., Karimov, A.",
+        "year": 2024,
+        "journal": "Landscape Ecology & Biodiversity",
+        "volume": "31",
+        "issue": "4",
+        "pages": "275–291",
+        "doi": "10.0000/leb.2024.3104",
+        "category": "biodiversity",
+        "pdf": "",
+        "url": "#"
+      },
+      {
+        "title": "Gnotobiotic assays reveal genotype-specific rhizosphere recruitment in Arabidopsis thaliana",
+        "authors": "Karimov, A., Petrova, S.",
+        "year": 2023,
+        "journal": "Journal of Plant–Microbe Ecology",
+        "volume": "38",
+        "issue": "5",
+        "pages": "401–418",
+        "doi": "10.0000/jpme.2023.3805",
+        "category": "microbe",
+        "pdf": "",
+        "url": "#"
+      },
+      {
+        "title": "Population genomic evidence for local adaptation in oak-associated ectomycorrhizal fungi",
+        "authors": "Islomov, O., Abdullayeva, F.",
+        "year": 2023,
+        "journal": "Molecular Ecology Reports",
+        "volume": "14",
+        "issue": "2",
+        "pages": "98–115",
+        "doi": "10.0000/mer.2023.1402",
+        "category": "molecular",
+        "pdf": "",
+        "url": "#"
+      },
+      {
+        "title": "Drought stress reduces beneficial fungal colonisation in seedling root systems",
+        "authors": "Nilsson, T., Morgan, D.",
+        "year": 2023,
+        "journal": "Climate Change & Plant Health",
+        "volume": "6",
+        "issue": "1",
+        "pages": "34–50",
+        "doi": "10.0000/ccph.2023.0601",
+        "category": "climate",
+        "pdf": "",
+        "url": "#"
+      }
+    ],
+    "news": [
+      {
+        "slug": "autumn-sampling-campaign-begins-at-the-oak-forest-field-site",
+        "title": "Autumn sampling campaign begins at the oak-forest field site",
+        "date": "2026-09-14",
+        "kind": "news",
+        "label": "Fieldwork",
+        "context": "Forest Ecosystem Interactions project",
+        "excerpt": "Our field team has started the seasonal leaf and soil sampling round used to track microbiome shifts through autumn senescence, continuing the Forest Ecosystem Interactions project.",
+        "body": "<p>Our field research team has begun the autumn round of the Forest Ecosystem Interactions project's seasonal sampling schedule. This is the fourth consecutive year the same set of marked oak (Quercus robur) trees across six forest plots has been sampled at this time of year, allowing the team to track how leaf-surface microbial communities shift as trees move into senescence.</p>\n<p>Each sampling visit follows a standardised protocol: leaf discs are collected from three canopy heights per tree for microbiome profiling, paired soil cores are taken from the root zone, and a structured visual survey records signs of insect herbivory on the same branches sampled in the previous season.</p>\n<p>\"Autumn is one of the more interesting windows in this dataset,\" said Dr. Madina Rahimova, who coordinates the field programme. \"Leaf chemistry is changing rapidly as the tree reallocates resources, and we consistently see shifts in both the fungal community and the insects still active on the canopy at this time.\"</p>\n<p>Samples collected during this campaign will be processed in the laboratory's molecular biology and microscopy facilities over the coming weeks, with amplicon sequencing results expected by early winter. The resulting dataset will feed into the project's ongoing model linking microbiome shifts to seasonal herbivore pressure.</p>\n<p>The campaign is expected to run through early October, weather permitting, and will be followed by the project's regular winter dormant-season baseline sampling.</p>",
+        "cover": "",
+        "cover_alt": "",
+        "seo_title": "Autumn Sampling Campaign Begins — Ecobiome Laboratory News",
+        "seo_description": "Our field team has started the seasonal leaf and soil sampling round for the Forest Ecosystem Interactions project.",
+        "og_title": "Autumn Sampling Campaign Begins — Ecobiome Laboratory",
+        "og_description": "Field notes from the start of our autumn sampling campaign at the oak-forest field site."
+      },
+      {
+        "slug": "new-paper-on-coffee-agroecosystem-soil-microbiomes-accepted",
+        "title": "New paper on coffee agroecosystem soil microbiomes accepted",
+        "date": "2026-08-02",
+        "kind": "news",
+        "label": "Publication",
+        "context": "",
+        "excerpt": "A study comparing shaded and unshaded Coffea arabica plots has been accepted for publication in Agroecosystem Science.",
+        "body": "<p>A study comparing shaded and unshaded Coffea arabica plots has been accepted for publication in Agroecosystem Science.</p>",
+        "cover": "",
+        "cover_alt": "",
+        "seo_title": "",
+        "seo_description": "",
+        "og_title": "",
+        "og_description": ""
+      },
+      {
+        "slug": "international-workshop-on-plantinsect-chemical-ecology-hosted",
+        "title": "International workshop on plant–insect chemical ecology hosted",
+        "date": "2026-06-21",
+        "kind": "event",
+        "label": "Workshop",
+        "context": "",
+        "excerpt": "Visiting researchers from three partner institutions joined a two-day methods workshop on volatile organic compound analysis.",
+        "body": "<p>Visiting researchers from three partner institutions joined a two-day methods workshop on volatile organic compound analysis.</p>",
+        "cover": "",
+        "cover_alt": "",
+        "seo_title": "",
+        "seo_description": "",
+        "og_title": "",
+        "og_description": ""
+      },
+      {
+        "slug": "lab-presents-three-talks-at-the-international-ecology-congress",
+        "title": "Lab presents three talks at the International Ecology Congress",
+        "date": "2026-05-10",
+        "kind": "event",
+        "label": "Conference",
+        "context": "",
+        "excerpt": "Dr. Rahimova and two PhD candidates presented recent findings on herbivore-induced volatiles and soil microbiome resilience.",
+        "body": "<p>Dr. Rahimova and two PhD candidates presented recent findings on herbivore-induced volatiles and soil microbiome resilience.</p>",
+        "cover": "",
+        "cover_alt": "",
+        "seo_title": "",
+        "seo_description": "",
+        "og_title": "",
+        "og_description": ""
+      },
+      {
+        "slug": "dr-karimov-receives-early-career-research-recognition",
+        "title": "Dr. Karimov receives early-career research recognition",
+        "date": "2026-03-18",
+        "kind": "news",
+        "label": "Award",
+        "context": "",
+        "excerpt": "The recognition cites contributions to integrating microbiome and insect ecology research methods.",
+        "body": "<p>The recognition cites contributions to integrating microbiome and insect ecology research methods.</p>",
+        "cover": "",
+        "cover_alt": "",
+        "seo_title": "",
+        "seo_description": "",
+        "og_title": "",
+        "og_description": ""
+      },
+      {
+        "slug": "visiting-postdoctoral-researcher-joins-for-a-four-month-exchange",
+        "title": "Visiting postdoctoral researcher joins for a four-month exchange",
+        "date": "2026-01-27",
+        "kind": "news",
+        "label": "Visiting researcher",
+        "context": "",
+        "excerpt": "A researcher from our molecular ecology exchange partner institution joined the lab to develop comparative genomics workflows.",
+        "body": "<p>A researcher from our molecular ecology exchange partner institution joined the lab to develop comparative genomics workflows.</p>",
+        "cover": "",
+        "cover_alt": "",
+        "seo_title": "",
+        "seo_description": "",
+        "og_title": "",
+        "og_description": ""
+      },
+      {
+        "slug": "laboratory-expands-controlled-environment-chamber-capacity",
+        "title": "Laboratory expands controlled-environment chamber capacity",
+        "date": "2025-12-05",
+        "kind": "news",
+        "label": "Announcement",
+        "context": "",
+        "excerpt": "Two additional growth chambers were commissioned to support the Climate and Plant Disease project.",
+        "body": "<p>Two additional growth chambers were commissioned to support the Climate and Plant Disease project.</p>",
+        "cover": "",
+        "cover_alt": "",
+        "seo_title": "",
+        "seo_description": "",
+        "og_title": "",
+        "og_description": ""
+      },
+      {
+        "slug": "insect-biodiversity-atlas-completes-its-third-annual-survey-round",
+        "title": "Insect Biodiversity Atlas completes its third annual survey round",
+        "date": "2025-10-14",
+        "kind": "news",
+        "label": "Fieldwork",
+        "context": "",
+        "excerpt": "The team has now completed three consecutive years of standardised sampling across the forest–farmland gradient.",
+        "body": "<p>The team has now completed three consecutive years of standardised sampling across the forest–farmland gradient.</p>",
+        "cover": "",
+        "cover_alt": "",
+        "seo_title": "",
+        "seo_description": "",
+        "og_title": "",
+        "og_description": ""
+      },
+      {
+        "slug": "herbivore-induced-volatiles-paper-published",
+        "title": "Herbivore-induced volatiles paper published",
+        "date": "2025-09-02",
+        "kind": "news",
+        "label": "Publication",
+        "context": "",
+        "excerpt": "Our study linking herbivore feeding to leaf microbiome shifts in Quercus robur was published in Ecology & Chemical Signalling.",
+        "body": "<p>Our study linking herbivore feeding to leaf microbiome shifts in Quercus robur was published in Ecology &amp; Chemical Signalling.</p>",
+        "cover": "",
+        "cover_alt": "",
+        "seo_title": "",
+        "seo_description": "",
+        "og_title": "",
+        "og_description": ""
+      }
+    ],
+    "services": [
+      {
+        "tag_label": "Service",
+        "title": "Molecular Analysis",
+        "description": "Nucleic acid extraction, PCR and library preparation for plant, microbial and environmental samples.",
+        "methodology": "Standard and custom extraction protocols, quality control via gel electrophoresis and spectrophotometry",
+        "applications": "Microbiome studies, plant genotyping, pathogen screening",
+        "request_label": "Contact our lab manager",
+        "request_url": "#contact",
+        "tags": []
+      },
+      {
+        "tag_label": "Service",
+        "title": "DNA Sequencing Support",
+        "description": "Library preparation and coordination with sequencing platforms for amplicon and shotgun metagenomic projects.",
+        "methodology": "16S/ITS amplicon and shotgun metagenomic library preparation",
+        "applications": "Soil and rhizosphere microbiome characterisation",
+        "request_label": "Submit a sequencing inquiry",
+        "request_url": "#contact",
+        "tags": []
+      },
+      {
+        "tag_label": "Service",
+        "title": "Microbial Analysis",
+        "description": "Isolation, culturing and functional characterisation of bacterial and fungal strains from plant and soil samples.",
+        "methodology": "Selective culturing, strain identification, functional enzyme assays",
+        "applications": "Beneficial microbe screening, pathogen identification",
+        "request_label": "Discuss your samples",
+        "request_url": "#contact",
+        "tags": []
+      },
+      {
+        "tag_label": "Service",
+        "title": "Plant Pathology Analysis",
+        "description": "Diagnosis and characterisation of plant disease symptoms, causal agents and severity under controlled conditions.",
+        "methodology": "Controlled inoculation trials, symptom scoring, pathogen identification",
+        "applications": "Crop disease risk assessment, resistance screening",
+        "request_label": "Request an assessment",
+        "request_url": "#contact",
+        "tags": []
+      },
+      {
+        "tag_label": "Service",
+        "title": "Ecological Data Analysis",
+        "description": "Statistical and network analysis of biodiversity, interaction and microbiome datasets.",
+        "methodology": "Community ecology statistics, network analysis, multivariate modelling",
+        "applications": "Biodiversity monitoring datasets, interaction network studies",
+        "request_label": "Discuss your dataset",
+        "request_url": "#contact",
+        "tags": []
+      },
+      {
+        "tag_label": "Service",
+        "title": "Field Sampling",
+        "description": "Standardised field sampling design and execution for insect, soil and plant surveys.",
+        "methodology": "Transect and trap-based survey design, soil coring protocols",
+        "applications": "Biodiversity baseline surveys, monitoring programme design",
+        "request_label": "Plan a field campaign",
+        "request_url": "#contact",
+        "tags": []
+      },
+      {
+        "tag_label": "Service",
+        "title": "Microscopy",
+        "description": "Imaging services for root colonisation, fungal structures and insect morphology using our microscopy suite.",
+        "methodology": "Confocal and compound microscopy, sample staining protocols",
+        "applications": "Mycorrhizal colonisation assessment, taxonomic identification",
+        "request_label": "Book microscopy time",
+        "request_url": "#contact",
+        "tags": []
+      },
+      {
+        "tag_label": "Service",
+        "title": "Scientific Consultation",
+        "description": "Advisory support on study design, sampling strategy and analytical approach for plant–microbe–insect research.",
+        "methodology": "Study design review, methods consultation, statistical planning",
+        "applications": "Grant proposal development, project planning",
+        "request_label": "Request a consultation",
+        "request_url": "#contact",
+        "tags": []
+      },
+      {
+        "tag_label": "Service",
+        "title": "Training & Workshops",
+        "description": "Hands-on training in molecular, microscopy and field methods for visiting researchers and students.",
+        "methodology": "Practical laboratory sessions, field method demonstrations",
+        "applications": "Graduate training, partner-institution capacity building",
+        "request_label": "Inquire about upcoming workshops",
+        "request_url": "#contact",
+        "tags": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="/news.html" style="color:inherit;"><%= page.breadcrumb %></a> / <%= b.news_intro.article_crumb %></p>
+      <h1><%= item.title %></h1>
+      <p class="lede"><%= [fmtDate(item.date), item.label, item.context].filter(Boolean).join(' · ') %></p>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="container">
+      <div style="max-width:760px;">
+<% if (item.cover) { %>        <img src="<%= item.cover %>" alt="<%= item.cover_alt %>" style="width:100%; border-radius:4px; margin-bottom:28px;">
+<% } %>        <%- item.body %>
+        <hr class="divider">
+        <p><a href="/news.html" class="btn-ghost"><%= b.news_intro.back_label %></a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('../partials/footer') %>

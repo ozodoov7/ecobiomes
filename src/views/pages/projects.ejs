@@ -1,0 +1,37 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+
+<main id="main">
+
+<%- include('../partials/page-hero') %>
+
+  <section class="section-alt">
+    <div class="container">
+      <div class="grid grid-2">
+<% projects.forEach((p, i) => { %>
+        <div class="card" id="project-<%= p.slug %>">
+<% if (p.image) { %>          <img src="<%= p.image %>" alt="<%= p.image_alt %>" style="width:100%; height:200px; object-fit:cover; border-radius:2px; margin-bottom:18px;" loading="lazy">
+<% } %>          <span class="tag"><%= b.projects_intro.number_prefix %> <%= pad2(i + 1) %><%= p.badge ? ' · ' + p.badge : '' %></span>
+          <h3 style="margin-top:14px;"><%= p.title %></h3>
+<% if (p.overview) { %>          <p><strong>Overview:</strong> <%= p.overview %></p>
+<% } if (p.question) { %>          <p><strong>Research question:</strong> <%= p.question %></p>
+<% } %>          <ul>
+<% if (p.objectives) { %>            <li><strong>Objectives:</strong> <%= p.objectives %></li>
+<% } if (p.methods) { %>            <li><strong>Methods:</strong> <%= p.methods %></li>
+<% } if (p.study_system) { %>            <li><strong>Study system:</strong> <%= p.study_system %></li>
+<% } if (p.outcomes) { %>            <li><strong>Expected outcomes:</strong> <%= p.outcomes %></li>
+<% } if (p.year_start) { %>            <li><strong>Years:</strong> <%= p.year_start %><%= p.year_end ? '–' + p.year_end : '–present' %></li>
+<% } if (p.team.length) { %>            <li><strong>Team:</strong> <%= p.team.map(t => t.name).join(', ') %></li>
+<% } %>          </ul>
+<% if (p.related_label || p.tags.length) { %>          <div class="card-tags"><% if (p.related_label) { %><span class="tag alt"><%= p.related_label %></span><% } %><% p.tags.forEach(t => { %><span class="tag"><%= t %></span><% }) %></div>
+<% } if (p.link_url) { %>          <div style="margin-top:16px;"><a href="<%= p.link_url %>" class="btn-ghost"><%= p.link_label %></a></div>
+<% } %>        </div>
+<% }) %>
+      </div>
+    </div>
+  </section>
+
+<%- include('../partials/cta') %>
+</main>
+
+<%- include('../partials/footer') %>

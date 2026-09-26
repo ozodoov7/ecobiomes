@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><%= meta.title %></title>
+<meta name="description" content="<%= meta.description %>">
+<% if (meta.robots) { %><meta name="robots" content="<%= meta.robots %>">
+<% } %>
+<meta property="og:title" content="<%= meta.ogTitle %>">
+<meta property="og:description" content="<%= meta.ogDescription %>">
+<meta property="og:type" content="<%= meta.ogType || 'website' %>">
+<% if (meta.ogImage) { %><meta property="og:image" content="<%= absUrl(meta.ogImage) %>">
+<% } %><link rel="icon" href="<%= settings.favicon %>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<% if (preview) { %><div style="position:fixed;bottom:12px;left:12px;z-index:9999;background:#AEE92B;color:#01271A;font:700 12px/1 Inter,sans-serif;padding:10px 14px;border-radius:2px;box-shadow:0 2px 8px rgba(0,0,0,.25);">PREVIEW — draft yozuvlar ham ko'rsatilmoqda</div>
+<% } %><a class="skip-link" href="#main">Skip to content</a>

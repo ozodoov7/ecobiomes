@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Kirish — Admin panel</title>
+<link rel="stylesheet" href="/admin/static/admin.css">
+</head>
+<body class="login-page">
+  <main class="login-box">
+    <img src="/assets/img/logo.png" alt="" class="login-logo">
+    <h1>Admin panel</h1>
+    <% if (error) { %><p class="alert alert-error" role="alert"><%= error %></p><% } %>
+    <form method="post" action="/admin/login" autocomplete="on">
+      <input type="hidden" name="_csrf" value="<%= csrf %>">
+      <label class="field"><span>Email</span><input type="email" name="email" value="<%= email %>" required autofocus autocomplete="username"></label>
+      <label class="field"><span>Parol</span><input type="password" name="password" required autocomplete="current-password"></label>
+      <button type="submit" class="btn btn-primary btn-block">Kirish</button>
+    </form>
+    <p class="muted small"><a href="/">← Saytga qaytish</a></p>
+  </main>
+</body>
+</html>

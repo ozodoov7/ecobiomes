@@ -1,0 +1,45 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+
+<main id="main">
+
+<%- include('../partials/page-hero') %>
+
+  <section class="section-alt">
+    <div class="container">
+<% if (b.publications_intro.note) { %>      <p class="demo-note"><%= b.publications_intro.note %></p>
+<% } %>
+      <div class="pub-tools">
+        <input type="text" id="pub-search" placeholder="<%= b.publications_intro.search_placeholder %>" aria-label="<%= b.publications_intro.search_aria %>">
+        <select id="pub-year-filter" aria-label="Filter by year">
+          <option value="all"><%= b.publications_intro.all_years_label %></option>
+<% years.forEach(y => { %>          <option value="<%= y.year %>"><%= y.year %></option>
+<% }) %>        </select>
+        <select id="pub-area-filter" aria-label="Filter by research area">
+          <option value="all"><%= b.publications_intro.all_areas_label %></option>
+<% categories.forEach(c => { %>          <option value="<%= c.key %>"><%= c.label %></option>
+<% }) %>        </select>
+      </div>
+      <p class="search-note" id="pub-count" role="status" aria-live="polite" data-template="<%= b.publications_intro.count_text || 'Showing {n} of {total} publications' %>"><%= String(b.publications_intro.count_text || 'Showing {n} of {total} publications').replace('{n}', total).replace('{total}', total) %></p>
+<% years.forEach(y => { %>
+      <!-- <%= y.year %> -->
+      <div class="pub-year-group" id="year-<%= y.year %>">
+        <div class="pub-year-head"><h3><%= y.year %></h3><div class="line"></div></div>
+<% y.items.forEach(p => { %>
+        <div class="pub-item" data-year="<%= p.year %>" data-area="<%= p.category %>">
+          <div>
+            <h4><%= p.title %></h4>
+            <p class="meta"><%= p.authors %> (<%= p.year %>).<% if (p.journal) { %> <em><%= p.journal %></em><% } %><%= p.volume ? ', ' + p.volume + (p.issue ? '(' + p.issue + ')' : '') : '' %><%= p.pages ? ', ' + p.pages : '' %>.<% if (p.doi) { %> DOI: <%= p.doi %><% } %></p>
+<% if (catLabel[p.category]) { %>            <span class="tag cat"><%= catLabel[p.category] %></span>
+<% } %>          </div>
+          <a href="<%= p.pdf || p.url || '#' %>" class="btn btn-outline btn-sm"<% if (p.pdf || /^https?:/.test(p.url || '')) { %> target="_blank" rel="noopener noreferrer"<% } %>><%= b.publications_intro.button_label %></a>
+        </div>
+<% }) %>      </div>
+<% }) %>
+    </div>
+  </section>
+
+<%- include('../partials/cta') %>
+</main>
+
+<%- include('../partials/footer') %>

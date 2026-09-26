@@ -1,0 +1,25 @@
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand">
+      <span class="logo-chip"><img src="<%= settings.logo %>" alt="<%= settings.logo_alt %>" width="150" height="100"></span>
+      <span class="brand-text"><strong><%= settings.brand_name %></strong><span><%= settings.brand_tagline %></span></span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+<% menu.header.forEach(item => { if (item.children.length) { %>        <li class="has-sub">
+          <a href="<%= item.url %>"><%= item.label %></a>
+          <button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-<%= item.id %>" aria-label="Show <%= item.label %> submenu"><span aria-hidden="true"></span></button>
+          <ul class="sub-menu" id="sub-<%= item.id %>">
+<% item.children.forEach(c => { %>            <li><a href="<%= c.url %>"><%= c.label %></a></li>
+<% }) %>          </ul>
+        </li>
+<% } else { %>        <li><a href="<%= item.url %>"><%= item.label %></a></li>
+<% } }) %>      </ul>
+    </nav>
+    <div class="header-actions">
+<% if (settings.show_search !== false && settings.show_search !== 0) { %>      <a href="/search.html" class="header-search" aria-label="<%= (headerSearch && headerSearch.header_aria) || 'Search' %>" title="<%= (headerSearch && headerSearch.header_aria) || 'Search' %>"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></a>
+<% } %><% menu.header_button.forEach(b => { %>      <a href="<%= b.url %>" class="btn btn-primary btn-sm header-contact"><%= b.label %></a>
+<% }) %>      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>

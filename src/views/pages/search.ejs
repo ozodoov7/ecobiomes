@@ -1,0 +1,39 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+
+<main id="main">
+
+<%- include('../partials/page-hero') %>
+
+  <section class="section-alt">
+    <div class="container">
+      <form class="pub-tools" role="search" action="/search.html" method="get">
+        <input type="search" name="q" value="<%= q %>" placeholder="<%= b.search_intro.placeholder %>" aria-label="<%= b.search_intro.placeholder %>" maxlength="100" autofocus>
+        <button type="submit" class="btn btn-primary"><%= b.search_intro.button_label %></button>
+      </form>
+<% if (!q) { %>
+      <p class="search-note"><%= b.search_intro.start_text %></p>
+<% } else if (!total) { %>
+      <p class="demo-note"><%= b.search_intro.empty_text %></p>
+<% } else { %>
+      <p class="search-note" role="status"><%= String(b.search_intro.count_text || '{n} results for “{q}”').replace('{n}', total).replace('{q}', q) %></p>
+      <div class="search-results">
+<% results.forEach(r => { const ext = /^https?:/.test(r.url) || /\.pdf$/i.test(r.url); %>
+        <div class="pub-item">
+          <div>
+            <span class="tag cat"><%= b.search_intro['type_' + r.type] || r.type %></span>
+            <h4 style="margin-top:10px;"><a href="<%= r.url %>"<% if (ext) { %> target="_blank" rel="noopener noreferrer"<% } %>><% r.title.forEach(s => { %><% if (s.m) { %><mark><%= s.t %></mark><% } else { %><%= s.t %><% } %><% }) %></a></h4>
+<% if (r.meta) { %>            <p class="meta"><%= r.meta %></p>
+<% } if (r.snippet.length) { %>            <p class="search-snippet"><% r.snippet.forEach(s => { %><% if (s.m) { %><mark><%= s.t %></mark><% } else { %><%= s.t %><% } %><% }) %></p>
+<% } %>          </div>
+          <a href="<%= r.url %>" class="btn btn-outline btn-sm"<% if (ext) { %> target="_blank" rel="noopener noreferrer"<% } %>><%= b.search_intro.open_label %></a>
+        </div>
+<% }) %>
+      </div>
+<% } %>
+    </div>
+  </section>
+
+</main>
+
+<%- include('../partials/footer') %>

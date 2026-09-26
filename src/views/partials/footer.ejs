@@ -1,0 +1,42 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="/" class="brand" style="margin-bottom:18px;">
+          <span class="logo-chip"><img src="<%= settings.logo %>" alt="<%= settings.logo_alt %>" width="120" height="80"></span>
+        </a>
+        <p><%= settings.footer_about %></p>
+        <div class="footer-social">
+<% (settings.socials || []).forEach(s => { %>          <a href="<%= s.url || '#' %>" aria-label="<%= s.aria %>"<% if (/^https?:/.test(s.url || '')) { %> target="_blank" rel="noopener noreferrer"<% } %>><%= s.label %></a>
+<% }) %>        </div>
+      </div>
+      <div>
+        <h4><%= settings.footer_col1_title %></h4>
+        <ul>
+<% menu.footer_1.forEach(l => { %>          <li><a href="<%= l.url %>"><%= l.label %></a></li>
+<% }) %>        </ul>
+      </div>
+      <div>
+        <h4><%= settings.footer_col2_title %></h4>
+        <ul>
+<% menu.footer_2.forEach(l => { %>          <li><a href="<%= l.url %>"><%= l.label %></a></li>
+<% }) %>        </ul>
+      </div>
+      <div id="contact">
+        <h4><%= settings.footer_col3_title %></h4>
+        <ul>
+          <li><%- lines(settings.address_short).map(esc).join('<br>') %></li>
+<% if (settings.email) { %>          <li><a href="mailto:<%= settings.email %>"><%= settings.email %></a></li>
+<% } if (settings.phone) { %>          <li><a href="tel:<%= tel(settings.phone) %>"><%= settings.phone %></a></li>
+<% } %>        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span class="current-year"><%= new Date().getFullYear() %></span> <%= settings.copyright_text %></span>
+      <span><a href="<%= settings.privacy_url || '#' %>"><%= settings.privacy_label %></a> &nbsp;·&nbsp; <a href="<%= settings.terms_url || '#' %>"><%= settings.terms_label %></a></span>
+    </div>
+  </div>
+</footer>
+<script src="/js/main.js"></script>
+</body>
+</html>

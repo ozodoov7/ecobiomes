@@ -1,0 +1,172 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+
+<main id="main">
+
+  <section class="hero-slideshow" id="hero-slideshow" aria-label="<%= b.home_hero.aria_label %>" aria-roledescription="carousel" data-interval="<%= settings.slide_interval || 10000 %>">
+
+<% slides.forEach((s, i) => { %>    <div class="slide<%= i === 0 ? ' active' : '' %>" data-eyebrow="<%= s.eyebrow %>" data-title="<%= s.title %>"<% if (s.btn1_label) { %> data-btn1-label="<%= s.btn1_label %>" data-btn1-url="<%= s.btn1_url %>"<% } %><% if (s.btn2_label) { %> data-btn2-label="<%= s.btn2_label %>" data-btn2-url="<%= s.btn2_url %>"<% } %>>
+      <img src="<%= s.image %>" alt="<%= s.alt %>"<% if (s.focus) { %> style="object-position:<%= s.focus %>;"<% } %> loading="<%= i === 0 ? 'eager' : 'lazy' %>">
+    </div>
+<% }) %>
+    <div class="slide-overlay"></div>
+
+    <div class="hero-slide-content">
+      <div class="inner">
+<% if (settings.show_hero_logo === true) { %>        <span class="logo-chip"><img src="<%= settings.logo %>" alt="<%= settings.logo_alt %>" width="110" height="73"></span>
+<% } %>        <p class="eyebrow on-dark" id="hero-eyebrow"><%= slides[0] ? slides[0].eyebrow : '' %></p>
+        <h1 id="hero-title"><%= slides[0] ? slides[0].title : settings.site_name %></h1>
+        <div class="hero-actions" data-default-btn1-label="<%= b.home_hero.btn1_label %>" data-default-btn1-url="<%= b.home_hero.btn1_url %>" data-default-btn2-label="<%= b.home_hero.btn2_label %>" data-default-btn2-url="<%= b.home_hero.btn2_url %>">
+          <a href="<%= (slides[0] && slides[0].btn1_label ? slides[0].btn1_url : b.home_hero.btn1_url) %>" class="btn btn-primary"><%= (slides[0] && slides[0].btn1_label) || b.home_hero.btn1_label %></a>
+          <a href="<%= (slides[0] && slides[0].btn2_label ? slides[0].btn2_url : b.home_hero.btn2_url) %>" class="btn btn-outline on-dark"><%= (slides[0] && slides[0].btn2_label) || b.home_hero.btn2_label %></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-dots" role="tablist" aria-label="Choose slide">
+<% slides.forEach((s, i) => { %>      <button<%- i === 0 ? ' class="active"' : '' %> role="tab" aria-selected="<%= i === 0 %>" aria-label="Slide <%= i + 1 %>" data-slide="<%= i %>"></button>
+<% }) %>    </div>
+  </section>
+
+  <section class="section-alt" id="info">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow"><%= b.home_info.eyebrow %></p>
+        <h2><%= b.home_info.title %></h2>
+        <p class="lede"><%= b.home_info.lede %></p>
+      </div>
+      <div class="two-col">
+        <div>
+          <p class="eyebrow"><%= b.home_info.mission_eyebrow %></p>
+          <h2><%= b.home_info.mission_title %></h2>
+        </div>
+        <div>
+<% paras(b.home_info.mission_body).forEach(p => { %>          <p><%= p %></p>
+<% }) %>        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-spring" id="about">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow"><%= b.home_about.eyebrow %></p>
+        <h2><%= b.home_about.title %></h2>
+      </div>
+      <div class="two-col">
+        <div>
+          <p class="eyebrow"><%= b.home_about.vision_eyebrow %></p>
+          <h3><%= b.home_about.vision_title %></h3>
+<% paras(b.home_about.vision_text).forEach(p => { %>          <p><%= p %></p>
+<% }) %>        </div>
+        <div>
+          <p class="eyebrow"><%= b.home_about.history_eyebrow %></p>
+          <h3><%= b.home_about.history_title %></h3>
+<% paras(b.home_about.history_text).forEach(p => { %>          <p><%= p %></p>
+<% }) %>        </div>
+      </div>
+<% if (b.home_about.quote) { %>
+      <hr class="divider">
+
+      <blockquote class="pi-quote">
+        "<%= b.home_about.quote %>"
+      </blockquote>
+      <p>— <%= b.home_about.quote_author %></p>
+<% } %>    </div>
+  </section>
+
+  <section class="section-alt" id="explore">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow"><%= b.home_explore.eyebrow %></p>
+        <h2><%= b.home_explore.title %></h2>
+      </div>
+      <div class="grid grid-4">
+<% explore.forEach(c => { %>        <a class="card" href="<%= c.url %>">
+          <h3><%= c.title %></h3>
+          <p><%= c.text %></p>
+          <span class="btn-ghost"><%= c.link_label %></span>
+        </a>
+<% }) %>      </div>
+    </div>
+  </section>
+<% if (settings.show_contact_form) { const cb = b.home_contact; %>
+  <section class="section-spring" id="contact-us">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow"><%= cb.eyebrow %></p>
+        <h2><%= cb.title %></h2>
+        <p class="lede"><%= cb.lede %></p>
+      </div>
+      <div class="two-col">
+        <div>
+          <h3><%= cb.form_title %></h3>
+          <form class="contact-form" id="contact-form" method="post" action="/contact" data-success="<%= cb.success_text %>">
+            <input type="hidden" name="_csrf" value="<%= publicCsrf %>">
+            <div style="position:absolute;left:-9999px;" aria-hidden="true"><label for="cf-website">Website</label><input type="text" id="cf-website" name="website" tabindex="-1" autocomplete="off"></div>
+            <div class="row-2">
+              <div>
+                <label for="cf-name">Full name</label>
+                <input type="text" id="cf-name" name="name" maxlength="120" required>
+              </div>
+              <div>
+                <label for="cf-email">Email address</label>
+                <input type="email" id="cf-email" name="email" maxlength="254" required>
+              </div>
+            </div>
+            <div>
+              <label for="cf-institution">Institution / organisation</label>
+              <input type="text" id="cf-institution" name="institution" maxlength="200">
+            </div>
+            <div>
+              <label for="cf-subject">Subject</label>
+              <select id="cf-subject" name="subject">
+<% (cb.subjects || []).forEach(o => { %>                <option><%= o %></option>
+<% }) %>              </select>
+            </div>
+            <div>
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="6" maxlength="5000" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary"><%= cb.button_label %></button>
+            <p id="form-status" role="status" style="display:none; font-size:.9rem; color:var(--emerald);"></p>
+          </form>
+        </div>
+
+        <div>
+          <h3><%= cb.info_title %></h3>
+          <div style="background:var(--forest); padding:32px; border-radius:4px;">
+            <div class="contact-info-item">
+              <h4>Address</h4>
+              <p><%- lines(settings.address_full).map(esc).join('<br>') %></p>
+            </div>
+            <div class="contact-info-item">
+              <h4>Email</h4>
+              <p><a href="mailto:<%= settings.email %>"><%= settings.email %></a></p>
+            </div>
+            <div class="contact-info-item">
+              <h4>Phone</h4>
+              <p><a href="tel:<%= tel(settings.phone) %>"><%= settings.phone %></a></p>
+            </div>
+            <div class="contact-info-item">
+              <h4>Office hours</h4>
+              <p><%= settings.office_hours %></p>
+            </div>
+            <div class="contact-info-item" style="border-bottom:none;">
+              <h4>Inquiries</h4>
+              <p>Research inquiries: <a href="mailto:<%= settings.research_email %>"><%= settings.research_email %></a><br>
+              Collaboration inquiries: <a href="mailto:<%= settings.collab_email %>"><%= settings.collab_email %></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+<% if (settings.map_url || cb.map_placeholder) { %>
+      <h2 style="margin:56px 0 24px;"><%= cb.map_title %></h2>
+<% if (settings.map_url) { %>      <iframe src="<%= settings.map_url %>" title="<%= cb.map_title %>" style="width:100%; height:320px; border:1px solid var(--line);" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<% } else { %>      <div class="map-placeholder"><%= cb.map_placeholder %></div>
+<% } } %>    </div>
+  </section>
+<% } %>
+</main>
+
+<%- include('../partials/footer') %>

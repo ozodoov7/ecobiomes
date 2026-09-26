@@ -1,0 +1,37 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+
+<main id="main">
+
+<%- include('../partials/page-hero') %>
+
+  <section class="section-alt">
+    <div class="container">
+<% if (b.people_intro.note) { %>      <p class="demo-note"><%= b.people_intro.note %></p>
+<% } %>
+<% groups.forEach((g, gi) => { %>
+<% if (gi > 0) { %>      <hr class="divider">
+
+<% } %>      <div class="section-head">
+        <p class="eyebrow"><%= b.people_intro[g.key + '_eyebrow'] %></p>
+        <h2><%= b.people_intro[g.key + '_title'] %></h2>
+      </div>
+      <div class="grid <%= g.key === 'pi' ? 'grid-2' : 'grid-3' %>">
+<% g.people.forEach(p => { %>        <div class="person" id="person-<%= p.slug %>">
+<% if (p.photo) { %>          <div class="avatar"><img src="<%= p.photo %>" alt="<%= p.photo_alt || p.name %>" style="width:100%; height:100%; object-fit:cover; border-radius:50%;" loading="lazy"></div>
+<% } else { %>          <div class="avatar"><%= p.initials %></div>
+<% } %>          <h3><%= p.name %></h3>
+          <span class="role"><%= p.role_title %></span>
+          <p><%= p.bio %></p>
+<% if (p.email || p.orcid || p.scholar_url) { %>          <p style="font-size:.85rem;"><% if (p.email) { %><a href="mailto:<%= p.email %>" style="color:var(--emerald);"><%= p.email %></a><% } %><% if (p.orcid) { %><%- p.email ? ' &nbsp;·&nbsp; ' : '' %><a href="<%= p.orcid %>" style="color:var(--emerald);" target="_blank" rel="noopener noreferrer">ORCID</a><% } %><% if (p.scholar_url) { %><%- (p.email || p.orcid) ? ' &nbsp;·&nbsp; ' : '' %><a href="<%= p.scholar_url %>" style="color:var(--emerald);" target="_blank" rel="noopener noreferrer">Google Scholar</a><% } %></p>
+<% } if (p.tags.length) { %>          <div class="card-tags"><% p.tags.forEach(t => { %><span class="tag"><%= t %></span><% }) %></div>
+<% } %>        </div>
+<% }) %>      </div>
+<% }) %>
+    </div>
+  </section>
+
+<%- include('../partials/cta') %>
+</main>
+
+<%- include('../partials/footer') %>

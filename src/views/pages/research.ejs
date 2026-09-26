@@ -1,0 +1,134 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+
+<main id="main">
+
+<%- include('../partials/page-hero') %>
+
+  <nav class="section-tabs" aria-label="On this page">
+    <div class="container">
+      <ul>
+        <li><a href="#research-areas"><%= b.research_tabs.tab_areas %></a></li>
+        <li><a href="#facilities"><%= b.research_tabs.tab_facilities %></a></li>
+        <li><a href="#collaboration"><%= b.research_tabs.tab_collab %></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section-alt" id="research-areas">
+    <div class="container">
+<% areas.forEach((a, i) => { const last = i === areas.length - 1; %>
+      <article id="area-<%= slug(a.title) %>" style="padding:40px 0;<%= last ? '' : ' border-bottom:1px solid var(--line);' %>">
+        <div class="two-col">
+          <div>
+            <span class="num"><%= pad2(i + 1) %></span>
+            <h2 style="margin-top:16px;"><%= a.title %></h2>
+            <p><%= a.summary %></p>
+          </div>
+          <div>
+<% if (a.questions.length) { %>            <p><strong>Research questions</strong></p>
+            <ul style="margin:0 0 16px; padding-left:18px;">
+<% a.questions.forEach(q => { %>              <li><%= q %></li>
+<% }) %>            </ul>
+<% } if (a.methods) { %>            <p><strong>Methods:</strong> <%= a.methods %></p>
+<% } if (a.current_focus) { %>            <p><strong>Current focus:</strong> <%= a.current_focus %></p>
+<% } if (a.related_projects) { %>            <p><strong>Related projects:</strong> <%= a.related_projects %></p>
+<% } if (a.link_url) { %>            <a href="<%= a.link_url %>" class="btn-ghost"><%= a.link_label %></a>
+<% } %>          </div>
+        </div>
+      </article>
+<% }) %>
+    </div>
+  </section>
+
+  <section id="facilities">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow"><%= b.research_facilities.eyebrow %></p>
+        <h2><%= b.research_facilities.title %></h2>
+        <p class="lede"><%= b.research_facilities.lede %></p>
+      </div>
+<% facilities.forEach((fc, i) => { %>
+      <div class="facility-row"<%- i === facilities.length - 1 ? ' style="border-bottom:none;"' : '' %>>
+        <div class="icon"><%= fc.icon %></div>
+        <div>
+          <h3><%= fc.title %></h3>
+          <p><%= fc.description %></p>
+<% if (fc.specs.length) { %>          <ul class="spec-list">
+<% fc.specs.forEach(sp => { %>            <li><strong><%= sp.label %>:</strong> <%= sp.value %></li>
+<% }) %>          </ul>
+<% } %>        </div>
+      </div>
+<% }) %>
+    </div>
+  </section>
+
+  <section class="section-spring">
+    <div class="container">
+      <div class="two-col" style="align-items:center;">
+        <div>
+          <p class="eyebrow"><%= b.research_facility_practice.eyebrow %></p>
+          <h2><%= b.research_facility_practice.title %></h2>
+<% paras(b.research_facility_practice.text).forEach(p => { %>          <p><%= p %></p>
+<% }) %>        </div>
+<% if (b.research_facility_practice.image) { %>        <figure class="hero-figure" style="border-color:rgba(1,39,26,.15);">
+          <img src="<%= b.research_facility_practice.image %>" alt="<%= b.research_facility_practice.image_alt %>">
+          <figcaption style="color:var(--forest); background:rgba(255,255,255,.5);"><%= b.research_facility_practice.caption %></figcaption>
+        </figure>
+<% } %>      </div>
+    </div>
+  </section>
+
+  <section class="section-alt" id="collaboration">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow"><%= b.research_collab.eyebrow %></p>
+        <h2><%= b.research_collab.title %></h2>
+        <p class="lede"><%= b.research_collab.lede %></p>
+      </div>
+      <p class="eyebrow"><%= b.research_collab.sub_eyebrow %></p>
+      <div class="grid grid-4">
+<% collabTypes.forEach(c => { %>        <div class="card">
+          <h3><%= c.title %></h3>
+          <p><%= c.text %></p>
+        </div>
+<% }) %>      </div>
+    </div>
+  </section>
+
+  <section class="section-forest">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow on-dark"><%= b.research_network.eyebrow %></p>
+        <h2><%= b.research_network.title %></h2>
+        <p class="lede"><%= b.research_network.lede %></p>
+      </div>
+      <div class="collab-map">
+        <div class="collab-dots">
+<% locations.forEach(l => { %>          <div class="collab-dot"<% if (l.lat !== null && l.lng !== null) { %> data-lat="<%= l.lat %>" data-lng="<%= l.lng %>"<% } %>><%= l.country %><%= l.description ? ' — ' + l.description : '' %></div>
+<% }) %>        </div>
+      </div>
+<% if (b.research_network.note) { %>      <p class="demo-note"><%= b.research_network.note %></p>
+<% } %>    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow"><%= b.research_timeline.eyebrow %></p>
+        <h2><%= b.research_timeline.title %></h2>
+      </div>
+<% timeline.forEach(t => { %>      <div class="timeline-item">
+        <div class="year"><%= t.year %></div>
+        <div>
+          <h3><%= t.title %></h3>
+          <p><%= t.text %></p>
+        </div>
+      </div>
+<% }) %>    </div>
+  </section>
+
+<%- include('../partials/cta') %>
+</main>
+
+<%- include('../partials/footer') %>
