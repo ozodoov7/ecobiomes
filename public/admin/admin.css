@@ -212,5 +212,6 @@ table.simple th{ font-size:.75rem; text-transform:uppercase; letter-spacing:.04e
   .savebar{ margin:8px -12px 0; padding:10px 12px; }
 }
 
-/* Logo: white rounded badge */
-.side-brand img{ background:#fff; border-radius:10px; padding:4px 8px; box-sizing:content-box; height:28px; }
+/* Logo: white circular badge */
+.side-brand img{ background:#fff; border-radius:50%; width:40px; height:40px; padding:4px; box-sizing:border-box; object-fit:contain; }
+.login-logo{ width:72px; height:72px; border-radius:50%; object-fit:contain; padding:6px; box-sizing:border-box; background:#fff; box-shadow:0 1px 6px rgba(1,39,26,.25); }
