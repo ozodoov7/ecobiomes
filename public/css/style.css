@@ -579,15 +579,26 @@ section{ padding:88px 0; }
 main section[id]{ scroll-margin-top:84px; }
 .section-tabs ~ section[id]{ scroll-margin-top:136px; }
 
-/* ---------- Logo: white rounded badge (header, footer, hero) ---------- */
+/* ---------- Logo: white circular badge (header, footer, hero) ---------- */
 .logo-chip{
   background:var(--white);
-  border-radius:12px;
-  padding:5px 10px;
+  border-radius:50%;
+  padding:0;
   line-height:0;
   box-shadow:0 1px 4px rgba(1,39,26,.18);
+  width:64px; height:64px; flex:none;
+  display:inline-flex; align-items:center; justify-content:center;
+  overflow:hidden;
 }
-.hero-slide-content .logo-chip{ border-radius:10px; padding:5px 9px; }
+.brand .logo-chip img,
+.hero-slide-content .logo-chip img{ width:84%; height:auto; max-height:84%; object-fit:contain; }
+.site-footer .logo-chip{ width:96px; height:96px; }
+.hero-slide-content .logo-chip{ width:60px; height:60px; border-radius:50%; padding:0; }
+@media (max-width:1080px){ .site-header .logo-chip{ width:54px; height:54px; } }
+
+/* ---------- People: larger round photos, text below ---------- */
+.person .avatar{ width:128px; height:128px; font-size:2.4rem; margin-bottom:20px; flex:none; overflow:hidden; }
+.person .avatar img{ display:block; }
 
 /* ---------- Site search ---------- */
 .header-search{
