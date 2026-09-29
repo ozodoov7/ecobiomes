@@ -94,6 +94,7 @@ async function importZip(zipPath) {
     fs.writeFileSync(dest, e.getData());
     files++;
   }
+  require('../db').migrate();
   return { safetyBackup: path.basename(safety), files };
 }
 

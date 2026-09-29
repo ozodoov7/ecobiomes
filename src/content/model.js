@@ -101,8 +101,13 @@ const COLLECTIONS = {
       f('bio', 'Bio', 'textarea', { max: 3000 }),
       f('tags', 'Teglar', 'tags'),
       f('email', 'Email', 'email'),
-      f('orcid', 'ORCID havolasi', 'url'),
-      f('scholar_url', 'Google Scholar havolasi', 'url'),
+      f('links', 'Profil havolalari', 'repeater', {
+        help: 'Xohlagancha havola qo\'shing: ORCID, Google Scholar, Scopus, ResearchGate, LinkedIn va h.k. Saytda shu tartibda chiqadi.',
+        fields: [
+          f('label', 'Nomi', 'text', { max: 40, placeholder: 'Nomi, masalan: Scopus' }),
+          f('url', 'Havola', 'url', { placeholder: 'https://…' }),
+        ],
+      }),
     ],
     list: ['photo', 'name', 'role_title', 'grp'],
     filters: ['grp'],

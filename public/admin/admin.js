@@ -257,7 +257,7 @@
       case 'text': case 'email': case 'url': case 'slug': case 'number': case 'date': {
         const type = { number: 'number', date: 'date', email: 'email' }[f.type] || 'text';
         const inp = h('input', { type, value: value ?? '', maxlength: f.max || null, step: f.type === 'number' ? (f.integer ? '1' : 'any') : null,
-          placeholder: f.type === 'slug' ? 'Bo\'sh qoldirilsa — avtomatik' : (f.type === 'url' ? '/sahifa.html, https://…, #anchor' : null) });
+          placeholder: f.placeholder || (f.type === 'slug' ? 'Bo\'sh qoldirilsa — avtomatik' : (f.type === 'url' ? '/sahifa.html, https://…, #anchor' : null)) });
         return { el: inp, get: () => inp.value, focusEl: inp };
       }
       case 'textarea': case 'paragraphs': case 'list': {
@@ -326,7 +326,7 @@
         const addRow = (row = {}) => {
           const inputs = {};
           const r = h('div', { class: 'rep-row', dataset: { id: String(++seq) } }, handleEl(false),
-            h('div', { class: 'rep-fields' }, f.fields.map(sf => { inputs[sf.name] = h('input', { type: 'text', value: row[sf.name] || '', placeholder: sf.label, 'aria-label': sf.label, maxlength: sf.max || null }); return inputs[sf.name]; })),
+            h('div', { class: 'rep-fields' }, f.fields.map(sf => { inputs[sf.name] = h('input', { type: 'text', value: row[sf.name] || '', placeholder: sf.placeholder || sf.label, 'aria-label': sf.label, maxlength: sf.max || null }); return inputs[sf.name]; })),
             h('button', { type: 'button', class: 'icon-btn', title: 'Qatorni o\'chirish', 'aria-label': 'Qatorni o\'chirish', text: '✕', onclick: () => r.remove() }));
           r._get = () => Object.fromEntries(Object.entries(inputs).map(([k, i]) => [k, i.value.trim()]));
           list.appendChild(r);

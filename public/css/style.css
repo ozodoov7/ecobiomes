@@ -615,3 +615,39 @@ main section[id]{ scroll-margin-top:84px; }
 .search-snippet{ font-size:.9rem; color:var(--ink-soft); margin:6px 0 0; }
 [id^="person-"], [id^="project-"], [id^="service-"]{ scroll-margin-top:100px; }
 .section-tabs ~ section [id^="area-"]{ scroll-margin-top:150px; }
+
+/* ---------- People: premium card, photo ring, link chips ---------- */
+.person{
+  border-radius:8px;
+  display:flex; flex-direction:column;
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.person:hover{ transform:translateY(-3px); box-shadow:0 16px 36px rgba(1,39,26,.10); border-color:#CFE0C8; }
+.person .avatar{
+  width:128px; height:128px;                     /* size unchanged */
+  box-shadow:0 0 0 4px var(--white), 0 0 0 6px var(--spring), 0 10px 24px rgba(1,39,26,.18);
+  margin:6px 0 24px 6px;
+}
+.person h3{ font-size:1.18rem; letter-spacing:-.005em; }
+.person-links{
+  display:flex; flex-wrap:wrap; gap:8px;
+  margin:4px 0 16px; padding-top:16px;
+  border-top:1px solid var(--line);
+}
+.person-link{
+  display:inline-flex; align-items:center; gap:7px;
+  max-width:100%;
+  padding:7px 12px 7px 10px;
+  border:1px solid var(--line); border-radius:999px;
+  background:var(--white); color:var(--forest);
+  font-size:.8rem; font-weight:600; line-height:1.2; text-decoration:none;
+  transition:background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
+}
+.person-link span{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.person-link svg{ width:15px; height:15px; flex:none; fill:none; stroke:var(--emerald); stroke-width:2; stroke-linecap:round; stroke-linejoin:round; transition:stroke .2s ease; }
+.person-link svg.ext{ width:12px; height:12px; opacity:.7; }
+.person-link:hover, .person-link:focus-visible{ background:var(--forest); border-color:var(--forest); color:var(--white); transform:translateY(-1px); }
+.person-link:hover svg, .person-link:focus-visible svg{ stroke:var(--lime); }
+.person-link.is-email{ background:var(--off-white); }
+.person .card-tags{ margin-top:auto; }
+@media (prefers-reduced-motion: reduce){ .person, .person-link{ transition:none; } .person:hover, .person-link:hover{ transform:none; } }

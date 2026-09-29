@@ -23,7 +23,12 @@
 <% } %>          <h3><%= p.name %></h3>
           <span class="role"><%= p.role_title %></span>
           <p><%= p.bio %></p>
-<% if (p.email || p.orcid || p.scholar_url) { %>          <p style="font-size:.85rem;"><% if (p.email) { %><a href="mailto:<%= p.email %>" style="color:var(--emerald);"><%= p.email %></a><% } %><% if (p.orcid) { %><%- p.email ? ' &nbsp;·&nbsp; ' : '' %><a href="<%= p.orcid %>" style="color:var(--emerald);" target="_blank" rel="noopener noreferrer">ORCID</a><% } %><% if (p.scholar_url) { %><%- (p.email || p.orcid) ? ' &nbsp;·&nbsp; ' : '' %><a href="<%= p.scholar_url %>" style="color:var(--emerald);" target="_blank" rel="noopener noreferrer">Google Scholar</a><% } %></p>
+<% const links = [];
+   if (p.email) links.push({ href: 'mailto:' + p.email, text: p.email, ext: false, email: true });
+   (p.links || []).forEach(l => { if (l.url) links.push({ href: l.url, text: l.label || l.url, ext: !/^(\/|#|mailto:|tel:)/.test(l.url) }); });
+   if (links.length) { %>          <div class="person-links">
+<% links.forEach(l => { %>            <a class="person-link<%= l.email ? ' is-email' : '' %>" href="<%= l.href %>"<% if (l.ext) { %> target="_blank" rel="noopener noreferrer"<% } %>><% if (l.email) { %><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><% } else { %><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"/></svg><% } %><span><%= l.text %></span><% if (l.ext) { %><svg class="ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg><% } %></a>
+<% }) %>          </div>
 <% } if (p.tags.length) { %>          <div class="card-tags"><% p.tags.forEach(t => { %><span class="tag"><%= t %></span><% }) %></div>
 <% } %>        </div>
 <% }) %>      </div>

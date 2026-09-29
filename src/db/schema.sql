@@ -120,7 +120,7 @@ CREATE TABLE IF NOT EXISTS people (
   role_title TEXT NOT NULL DEFAULT '',
   grp TEXT NOT NULL DEFAULT 'core' CHECK (grp IN ('pi','core','doctoral','technical')),
   bio TEXT NOT NULL DEFAULT '', tags TEXT NOT NULL DEFAULT '[]',
-  email TEXT NOT NULL DEFAULT '', orcid TEXT NOT NULL DEFAULT '', scholar_url TEXT NOT NULL DEFAULT '',
+  email TEXT NOT NULL DEFAULT '', orcid TEXT NOT NULL DEFAULT '', scholar_url TEXT NOT NULL DEFAULT '', scopus_url TEXT NOT NULL DEFAULT '', links TEXT NOT NULL DEFAULT '[]',
   sort INTEGER NOT NULL DEFAULT 0, status TEXT NOT NULL DEFAULT 'published' CHECK (status IN ('draft','published')),
   created_at TEXT NOT NULL DEFAULT (datetime('now')), updated_at TEXT NOT NULL DEFAULT (datetime('now'))
 );

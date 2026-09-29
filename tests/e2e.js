@@ -234,6 +234,16 @@ const page = async p => (await fetch(BASE + p)).text();
   ok(r.status === 200 && r.data.status.last_local.ok && /^ecobiome-.*\.zip$/.test(r.data.status.last_local.file), '"Backup now" creates a server backup');
   ok((await A.api('GET', '/backup/list')).data.some(f => f.name === r.data.status.last_local.file), 'new backup listed for download');
 
+  console.log('People profile links');
+  const pp = (await A.api('GET', '/c/people')).data[0];
+  const five = [['ORCID','https://orcid.org/0000-0001-9811-9277'],['Google Scholar','https://scholar.google.com/citations?user=abc'],['Scopus','https://www.scopus.com/authid/detail.uri?authorId=23396834800'],['ResearchGate','https://www.researchgate.net/profile/Test'],['LinkedIn','https://www.linkedin.com/in/test']].map(([label,url])=>({label,url}));
+  r = await A.api('PUT', '/c/people/' + pp.id, { links: five });
+  const peopleHtml = await page('/people.html');
+  ok(r.status === 200 && r.data.links.length === 5 && five.every(l => peopleHtml.includes(`<span>${l.label}</span>`)), 'any number of profile links (5) saved and shown in order');
+  r = await A.api('PUT', '/c/people/' + pp.id, { links: [{ label: 'Bad', url: 'javascript:alert(1)' }] });
+  ok(!(await page('/people.html')).includes('javascript:alert'), 'unsafe link URL is dropped');
+  await A.api('PUT', '/c/people/' + pp.id, { links: [] });
+
   console.log('Lockout');
   for (let i = 0; i < 5; i++) await login('editor@test.uz', 'wrong-password-' + i);
   const locked = await login('editor@test.uz', 'EditorPass123');
