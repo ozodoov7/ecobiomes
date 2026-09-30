@@ -215,3 +215,46 @@ table.simple th{ font-size:.75rem; text-transform:uppercase; letter-spacing:.04e
 /* Logo: white circular badge */
 .side-brand img{ background:#fff; border-radius:50%; width:40px; height:40px; padding:4px; box-sizing:border-box; object-fit:contain; }
 .login-logo{ width:72px; height:72px; border-radius:50%; object-fit:contain; padding:6px; box-sizing:border-box; background:#fff; box-shadow:0 1px 6px rgba(1,39,26,.25); }
+
+/* ---------- Sidebar navigation — "Kapsula" style, same as the website menu ---------- */
+.nav-group > button{ padding:6px 26px; }
+.nav-group a{
+  position:relative; z-index:0;
+  margin:2px 12px; padding:8px 14px;
+  border-left:0; border-radius:999px;
+  transition:color .3s ease;
+}
+.nav-group a:hover{ background:none; color:var(--lime); }
+.nav-group a::before{
+  content:''; position:absolute; inset:0; z-index:-1;
+  border-radius:inherit;
+  background:rgba(174,233,43,.14);
+  opacity:0; transform:scale(.8);
+  transition:opacity .3s ease, transform .3s cubic-bezier(.2,.8,.2,1), background-color .3s ease, box-shadow .3s ease;
+}
+.nav-group a:hover::before, .nav-group a:focus-visible::before{ opacity:1; transform:none; }
+.nav-group a:focus-visible{ outline:2px solid var(--lime); outline-offset:2px; }
+.nav-group a.active{ background:none; border-left:0; color:var(--forest); font-weight:700; }
+.nav-group a.active::before{ opacity:1; transform:none; background:var(--lime); box-shadow:0 6px 16px rgba(174,233,43,.3); }
+.nav-group a.active .badge{ background:var(--forest); color:var(--lime); }
+.menu-btn{ transition:transform .3s cubic-bezier(.2,.8,.2,1); }
+
+@media (max-width:900px){
+  .sidebar{ transition:transform .35s cubic-bezier(.2,.8,.2,1); }
+  .app.nav-open .menu-btn{ transform:rotate(90deg); }
+  .app.nav-open .nav-group{ animation:navGroupIn .45s cubic-bezier(.2,.8,.2,1) both; }
+  .app.nav-open .nav-group:nth-child(2){ animation-delay:.04s; }
+  .app.nav-open .nav-group:nth-child(3){ animation-delay:.08s; }
+  .app.nav-open .nav-group:nth-child(4){ animation-delay:.12s; }
+  .app.nav-open .nav-group:nth-child(5){ animation-delay:.16s; }
+  .app.nav-open .nav-group:nth-child(6){ animation-delay:.20s; }
+  .app.nav-open .nav-group:nth-child(7){ animation-delay:.24s; }
+  .app.nav-open .nav-group:nth-child(8){ animation-delay:.28s; }
+  .app.nav-open .nav-group:nth-child(9){ animation-delay:.32s; }
+}
+@keyframes navGroupIn{ from{ opacity:0; transform:translateX(-14px); } to{ opacity:1; transform:none; } }
+
+@media (prefers-reduced-motion: reduce){
+  .nav-group a, .nav-group a::before, .sidebar, .menu-btn{ transition:none; }
+  .app.nav-open .nav-group{ animation:none; }
+}

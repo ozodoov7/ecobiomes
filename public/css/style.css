@@ -651,3 +651,92 @@ main section[id]{ scroll-margin-top:84px; }
 .person-link.is-email{ background:var(--off-white); }
 .person .card-tags{ margin-top:auto; }
 @media (prefers-reduced-motion: reduce){ .person, .person-link{ transition:none; } .person:hover, .person-link:hover{ transform:none; } }
+
+/* ==========================================================================
+   Navigation — "Kapsula" (B)
+   Desktop: soft pill fades in on hover, the current page sits in a solid lime pill.
+   Phone:   full-screen menu, large serif items that appear one after another,
+            and the ☰ button morphs into ✕.
+   ========================================================================== */
+:root{ --nav-d:.35s; --nav-ease:cubic-bezier(.2,.8,.2,1); }
+
+.main-nav a{
+  position:relative; z-index:0;
+  border-radius:999px;
+  padding-left:14px; padding-right:14px;
+  transition:color var(--nav-d) ease;
+}
+.main-nav a:hover, .main-nav a.active{ background:none; }            /* replaces the old square highlight */
+.main-nav a::before{
+  content:''; position:absolute; inset:1px 0; z-index:-1;
+  border-radius:inherit;
+  background:rgba(174,233,43,.16);
+  opacity:0; transform:scale(.75);
+  transition:opacity var(--nav-d) ease, transform var(--nav-d) var(--nav-ease),
+             background-color var(--nav-d) ease, box-shadow var(--nav-d) ease;
+}
+.main-nav a:hover, .main-nav a:focus-visible{ color:var(--lime); }
+.main-nav a:hover::before, .main-nav a:focus-visible::before{ opacity:1; transform:none; }
+.main-nav a:focus-visible{ outline:2px solid var(--lime); outline-offset:2px; }
+.main-nav a.active{ color:var(--forest); }
+.main-nav a.active::before{ opacity:1; transform:none; background:var(--lime); box-shadow:0 6px 18px rgba(174,233,43,.35); }
+.main-nav .sub-menu a::before{ inset:0; }
+
+/* Research ▾ button sits next to the pill, not inside it */
+@media (min-width:1081px){
+  .main-nav .has-sub > .sub-toggle{ margin-left:2px; padding:10px 6px 10px 2px; }
+  .main-nav .has-sub > a.active ~ .sub-toggle{ color:var(--lime); }
+}
+
+/* ☰ → ✕ */
+.nav-toggle span{ transition:transform var(--nav-d) var(--nav-ease), opacity var(--nav-d) ease; }
+.nav-toggle[aria-expanded="true"] span:nth-child(1){ transform:translateY(6px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2){ opacity:0; transform:scaleX(.2); }
+.nav-toggle[aria-expanded="true"] span:nth-child(3){ transform:translateY(-6px) rotate(-45deg); }
+
+/* Laptops / small desktops: keep all items on one line */
+@media (max-width:1320px){
+  .main-nav a{ padding-left:10px; padding-right:10px; }
+}
+
+/* Phones & tablets */
+@media (max-width:1080px){
+  .main-nav{
+    transform:none; opacity:0; visibility:hidden;
+    background:var(--forest);
+    padding:28px 22px calc(28px + env(safe-area-inset-bottom, 0px));
+    transition:opacity var(--nav-d) ease, visibility 0s linear var(--nav-d);
+  }
+  .main-nav.open{ opacity:1; visibility:visible; transition:opacity var(--nav-d) ease, visibility 0s; }
+
+  .main-nav > ul > li{
+    opacity:0; transform:translateY(14px) scale(.98);
+    transition:opacity var(--nav-d) ease, transform var(--nav-d) var(--nav-ease);
+  }
+  .main-nav.open > ul > li{ opacity:1; transform:none; }
+  .main-nav.open > ul > li:nth-child(1){ transition-delay:.05s; }
+  .main-nav.open > ul > li:nth-child(2){ transition-delay:.09s; }
+  .main-nav.open > ul > li:nth-child(3){ transition-delay:.13s; }
+  .main-nav.open > ul > li:nth-child(4){ transition-delay:.17s; }
+  .main-nav.open > ul > li:nth-child(5){ transition-delay:.21s; }
+  .main-nav.open > ul > li:nth-child(6){ transition-delay:.25s; }
+  .main-nav.open > ul > li:nth-child(7){ transition-delay:.29s; }
+  .main-nav.open > ul > li:nth-child(8){ transition-delay:.33s; }
+
+  .main-nav > ul > li > a{
+    font-family:var(--font-head); font-size:1.45rem; font-weight:600;
+    text-transform:none; letter-spacing:0;
+    border-bottom:none; padding:11px 18px; margin:3px 0;
+  }
+  .main-nav a::before{ inset:0; }
+  .main-nav .sub-toggle{ border-bottom:none; width:48px; }
+  .main-nav .sub-menu{ padding:2px 0 8px 18px; }
+  .main-nav .sub-menu a{ font-size:.95rem; padding:10px 16px; border-bottom:none; }
+
+  body:has(.main-nav.open){ overflow:hidden; }       /* page behind the menu does not scroll */
+}
+
+@media (prefers-reduced-motion: reduce){
+  :root{ --nav-d:0s; }
+  .main-nav > ul > li{ transform:none; }
+}
